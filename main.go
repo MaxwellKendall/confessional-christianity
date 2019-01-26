@@ -1,26 +1,53 @@
 package main
 
 import (
-	"encoding/csv"
 	"fmt"
-	"log"
-	"os"
+
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/awserr"
+	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/dynamodb"
 )
 
 func main() {
-	// gives me a pointer to a File which implements the Reader Interface
-	fileToBeRead, err := os.Open("./WCF.csv")
-	if err != nil {
-		log.Fatalln(err)
+	// lets read something from dynamo db
+	sess := session.Must(session.NewSession())
+	svc := dynamodb.New(sess)
+	input := &dynamodb.GetItemInput{
+		Key: map[string]*dynamodb.AttributeValue{
+			"id": {
+				S: aws.String("1"),
+			},
+			"chapter": {
+				N: aws.String("1"),
+			},
+		},
+		TableName: aws.String("wcf"),
 	}
 
-	csvReaderFn := csv.NewReader(fileToBeRead)
-	records, err := csvReaderFn.ReadAll()
-
+	result, err := svc.GetItem(input)
 	if err != nil {
-		log.Fatalln(err)
+		if aerr, ok := err.(awserr.Error); ok {
+			switch aerr.Code() {
+			case dynamodb.ErrCodeProvisionedThroughputExceededException:
+				fmt.Println(dynamodb.ErrCodeProvisionedThroughputExceededException, aerr.Error())
+			case dynamodb.ErrCodeResourceNotFoundException:
+				fmt.Println(dynamodb.ErrCodeResourceNotFoundException, aerr.Error())
+			case dynamodb.ErrCodeRequestLimitExceeded:
+				fmt.Println(dynamodb.ErrCodeRequestLimitExceeded, aerr.Error())
+			case dynamodb.ErrCodeInternalServerError:
+				fmt.Println(dynamodb.ErrCodeInternalServerError, aerr.Error())
+			default:
+				fmt.Println(aerr.Error())
+			}
+		} else {
+			// Print the error, cast err to awserr.Error to get the Code and
+			// Message from an error.
+			fmt.Println(err.Error())
+		}
+		return
 	}
 
-	fmt.Println(records[0][1])
-	fmt.Println("HERE")
+	fmt.Println(result)
+
 }
