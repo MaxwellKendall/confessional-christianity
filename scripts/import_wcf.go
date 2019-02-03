@@ -1,18 +1,32 @@
 package main
 
 import (
+	"bufio"
 	"encoding/csv"
 	"fmt"
-	"go/scanner"
-	"io/ioutil"
 	"log"
 	"os"
 	"strings"
 )
 
+type wcfParagraph struct {
+	Content         string            `json:"content"`
+	ScriptureProofs map[string]string `json:"scripture_proofes"`
+}
+
+type wcfChapter struct {
+	Title      string         `json:"title"`
+	Number     int            `json:"number"`
+	Paragraphs []wcfParagraph `json:"paragraphs"`
+}
+
+type wcf struct {
+	Chapters []wcfChapter `json:"chapters"`
+}
+
 func readCSV() {
 	// gives me a pointer to a File which implements the Reader Interface
-	fileToBeRead, err := os.Open("./WCF.csv")
+	fileToBeRead, err := os.Open("../WCF.csv")
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -28,15 +42,47 @@ func readCSV() {
 	fmt.Println("HERE")
 }
 
-func main() {
-	readCSV()
+func parseTitles(data []byte) {
+	sliceOfWords := strings.Fields(string(data))
+	endIndexForTitle := 1
+	var wcfHeading string
 
-	const src, _ = ioutil.ReadFile("./WCF.txt")
+	for i, word := range sliceOfWords {
+		// fmt.Println(len(sliceOfWords))
+		if strings.HasPrefix(word, "__WCF_CHAPTER__") {
+			arrayWithTitle := sliceOfWords[i+1 : i+7]
+			for index, w := range arrayWithTitle {
+				if w == "1." {
+					endIndexForTitle = index
+					wcfHeading = strings.Join(arrayWithTitle[0:endIndexForTitle], " ")
 
-	var s scanner.Scanner
-	s.Init(strings.NewReader(src))
-	s.Filename = "example"
-	for tok := s.Scan(); tok != scanner.EOF; tok = s.Scan() {
-		fmt.Printf("%s: %s\n", s.Position, s.TokenText())
+					fmt.Println("PARSED: ", "Of "+wcfHeading)
+				}
+			}
+		}
 	}
+}
+
+func splitWCF(data []byte, atEOF bool) (advance int, token []byte, err error) {
+	// "tokenizes" the wcf into bite size pieces so we can parse it into a go struct
+	if atEOF {
+		fmt.Println("HEY")
+		return 0, nil, nil
+	}
+	if err != nil {
+		fmt.Println(err)
+		return 0, nil, err
+	}
+
+	parseTitles(data)
+
+	return len(data), nil, nil
+}
+
+func main() {
+	// readCSV()
+	f, _ := os.Open("./WCF.txt")
+	s := bufio.NewScanner(f)
+	s.Split(splitWCF)
+	s.Scan()
 }
