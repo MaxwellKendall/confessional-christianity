@@ -38,11 +38,10 @@ func readCSV() {
 	fmt.Println("HERE")
 }
 
-func parseTitles(data []byte, confession []wcfChapter) []wcfChapter {
+func parseTitles(data []byte) []byte {
 	sliceOfWords := strings.Fields(string(data))
 	endIndexForTitle := 1
-	var wcfHeading string
-
+	var token []byte
 	for i, word := range sliceOfWords {
 		// fmt.Println(len(sliceOfWords))
 		if strings.HasPrefix(word, "__WCF_CHAPTER__") {
@@ -50,15 +49,14 @@ func parseTitles(data []byte, confession []wcfChapter) []wcfChapter {
 			for index, w := range arrayWithTitle {
 				if w == "1." {
 					endIndexForTitle = index
-					wcfHeading = strings.Join(arrayWithTitle[0:endIndexForTitle], " ")
-					newChapter := wcfChapter{Title: wcfHeading}
-					append(confession, newChapter)
-					fmt.Println("confession", confession)
+					// creating a slice of bytes
+					wcfHeading := []byte(strings.Join(arrayWithTitle[0:endIndexForTitle], " "))
+					token = append(token, wcfHeading...)
 				}
 			}
 		}
 	}
-	return confession
+	return token
 }
 
 func splitWCF(data []byte, atEOF bool) (advance int, token []byte, err error) {
@@ -71,11 +69,12 @@ func splitWCF(data []byte, atEOF bool) (advance int, token []byte, err error) {
 		fmt.Println(err)
 		return 0, nil, err
 	}
-	wcf := []wcfChapter{}
 
-	parseTitles(data, wcf)
+	arrayOfTitles := parseTitles(data)
+	// arrayOfParagraphs :=
+	// arrayOfScriptureReferences :=
 
-	return len(data), nil, nil
+	return len(data), arrayOfTitles, nil
 }
 
 func main() {
@@ -83,5 +82,10 @@ func main() {
 	f, _ := os.Open("./WCF.txt")
 	s := bufio.NewScanner(f)
 	s.Split(splitWCF)
-	s.Scan()
+	wcf := []wcfChapter{}
+	for s.Scan() {
+		// Right now just getting the chapter title, but would ideally like to grab the entire chapter and return it as a text block
+		wcf = append(wcf, wcfChapter{Title: s.Text()})
+	}
+	fmt.Println(wcf)
 }
