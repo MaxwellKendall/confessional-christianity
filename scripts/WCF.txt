@@ -215,10 +215,10 @@ Ps. 5:4. For thou art not a God that hath pleasure in wickedness: neither shall 
 
 
  WCF_PROOF c. Acts 2:23. Him, being delivered by the determinate counsel and foreknowl.
-2.
+ __WCF__PARAGRAPH__ 2.
   Although God knows whatsoever may or can come to pass upon all supposed conditions__WCF_SCRIPTURE_REF d. yet hath he not decreed anything be.cause he foresaw it as future, or as that which would come to pass upon such conditions. __WCF_SCRIPTURE_REF e. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   By the decree of God, for the manifestation of his glory, some men and angelsf are predestinated unto everlasting life; and others foreordained to everlasting death. __WCF_SCRIPTURE_REF g. 
 
 
@@ -239,10 +239,10 @@ Rom. 9:11, 13, 16, 18. ' (for the children being not yet born, neither having do
 Eph. 1:5-6. ' having predestinated us unto the adoption of children by Jesus Christ to himself, according to the good pleasure of his will, to the praise of the glory of his grace, wherein he hath made us accepted in the beloved. Rom. 9:22-23. What if God, willing to shew his wrath, and to make his power known, endured with 
 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   These angels and men, thus predestinated, and foreordained, are particularly and unchangeably designed, and their number so certain and definite, that it cannot be either increased or diminished. __WCF_SCRIPTURE_REF h. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   Those of mankind that are predestinated unto life, God, be.fore the foundation of the world was laid, according to his eternal and immutable purpose, and the secret counsel and good pleasure of his will, hath chosen, in Christ, unto everlasting glory__WCF_SCRIPTURE_REF i. out of his mere free grace and love, without any foresight of faith, or good works, or perseverance in either of them, or any other thing in the creature, as conditions, or causes moving him thereunto__WCF_SCRIPTURE_REF k. and all to the praise of his glorious grace. __WCF_SCRIPTURE_REF l. 
 
 
@@ -275,10 +275,10 @@ us accepted in the beloved.' that we should be to the praise of his glory, who f
 John 10:14-15, 26. I am the good shepherd, and know my sheep, and am known of mine. As the Father knoweth me, even so know I the Father: and I lay down my life for the sheep.' But ye believe not, because ye are not of my sheep, as I said unto you.  John 6:64-65. But there are some of you that believe not. For Jesus knew from the beginning who they were that believed not, and who should betray him. And he said, Therefore said I unto you, that no man can come unto me, except it were given unto him of my Father.  Rom. 8:28-39. And we know that all things work together for good to them that love God, to them who are the called according to his purpose. For whom he did foreknow, he also did predestinate to be conformed to the image of his Son, that he might be the firstborn among many brethren. Moreover whom he did predestinate, them he also called: and whom he called, them he also justified: and whom he justified, them he also glorified. What shall we then say to these things? If God be for us, who can be against us? He that spared not his own Son, but delivered him up for us all, how shall he not with him also freely give us all things? Who shall lay any thing to the charge of God's elect? It is God that justifieth. Who is he that condemneth? It is Christ that died, yea rather, that is risen again, who is even at the right hand of God, who also maketh intercession for us. Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution, or famine, or 
 
 
-7.
+ __WCF__PARAGRAPH__ 7.
   The rest of mankind God was pleased, according to the unsearchable counsel of his own will, whereby he extendeth or withholdeth mercy, as he pleaseth, for the glory of his sovereign power over his creatures, to pass by; and to ordain them to dishonor and wrath for their sin, to the praise of his glorious justice. __WCF_SCRIPTURE_REF r. 
 
-8.
+ __WCF__PARAGRAPH__ 8.
   The doctrine of this high mystery of predestination is to be handled with special prudence and care__WCF_SCRIPTURE_REF s. that men, attending the will of God revealed in his Word, and yielding obedience thereunto, may, from the certainty of their effectual vocation, be assured of their eternal election. __WCF_SCRIPTURE_REF t. So shall this doctrine afford matter of praise, rever.
 
 
@@ -428,11 +428,11 @@ Ex. 8:15, 32. But when Pharaoh saw that there was respite, he hardened his heart
  WCF_PROOF c. 
 1 Tim. 4:10. For therefore we both labour and suffer reproach, because we trust in the living God, who is the Saviour of all men, specially of those that believe. Amos 9:8-9. Behold, the eyes of the Lord GOD are upon the sinful kingdom, and I will destroy it from off the face of the earth; saving that I will not utterly destroy the house of Jacob, saith the LORD. For, lo, I will command, and I will sift the house of Israel among all nations, like as corn is sifted in a sieve, yet shall not the least grain fall upon the earth. Matt. 16:18. And I say also unto thee, That thou art Peter, and upon this rock I will build my church; and the gates of hell shall not prevail against it.  Rom. 8:28. And we know that all things work together for good to them that love God, to them who are the called according to his purpose. Isa. 43:3-5, 14. For I am the LORD thy God, the Holy One of Israel, thy Saviour: I gave Egypt for thy ransom, Ethiopia and Seba for thee. Since thou wast precious in my sight, thou hast been honourable, and I have loved thee: therefore will I give men for thee, and people for thy life. Fear not: for I am with thee: I will bring thy seed from the east, and gather thee from the west.' Thus saith the LORD, your redeemer, the Holy One of Israel; For your sake I have sent to Babylon, and have brought down all their nobles, and the Chaldeans, whose cry is in the ships. 
 
-__WCF_CHAPTER__Of the Fall of Man, of Sin, and of the Punishment Thereof 
-1.
+__WCF_CHAPTER__ Of the Fall of Man, of Sin, and of the Punishment Thereof 
+ __WCF__PARAGRAPH__ 1.
   Our first parents, being seduced by the subtilty and temptation of Satan, sinned, in eating the forbidden fruit. __WCF_SCRIPTURE_REF a. This their sin, God was pleased, according to his wise and holy counsel, to permit, hav.ing purposed to order it to his own glory. __WCF_SCRIPTURE_REF b. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   By this sin they fell from their original righteousness and com.munion with God__WCF_SCRIPTURE_REF c. and so became dead in sin__WCF_SCRIPTURE_REF d. and wholly defiled in all the parts and faculties of soul and body. __WCF_SCRIPTURE_REF e. 
 
 
@@ -453,10 +453,10 @@ Gen. 6:5. And God saw that the wickedness of man was great in the earth, and tha
 
 
 17:9. The heart is deceitful above all things, and desperately wicked: who can know it?  Titus 1:15. Unto the pure all things are pure: but unto them that are defiled and unbelieving is nothing pure; but even their mind and conscience is defiled. Rom. 3:10-19. As it is written, There is none righteous, no, not one: there is none that understandeth, there is none that seeketh after God. They are all gone out of the way, they are together become unprofitable; there is none that doeth good, no, not one. Their throat is an open sepulchre; with their tongues they have used deceit; the poison of asps is under their lips: whose mouth is full of cursing and bitterness: their feet are 
-3.
+ __WCF__PARAGRAPH__ 3.
   They being the root of all mankind, the guilt of this sin was imputed__WCF_SCRIPTURE_REF f. and the same death in sin, and corrupted nature, conveyed to all their posterity descending from them by ordinary generation. __WCF_SCRIPTURE_REF g. 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   From this original corruption, whereby we are utterly indis.posed, disabled, and made opposite to all good__WCF_SCRIPTURE_REF h. and wholly inclined to all evil__WCF_SCRIPTURE_REF i. do proceed all actual transgressions. __WCF_SCRIPTURE_REF k. 
 
 
@@ -475,10 +475,10 @@ Gen. 8:21. And the LORD smelled a sweet savour; and the LORD said in his heart, 
 
 
  WCF_PROOF k.  Matt. 15:19. For out of the heart proceed evil thoughts, murders, adulteries, 
-5. 
+ __WCF__PARAGRAPH__ 5. 
 This corruption of nature, during this life, doth remain in those that are regenerated__WCF_SCRIPTURE_REF l. and although it be, through Christ, par.doned, and mortified; yet both itself, and all the motions thereof, are truly and properly sin. __WCF_SCRIPTURE_REF m. 
 
-6.
+ __WCF__PARAGRAPH__ 6.
   Every sin, both original and actual, being a transgression of the righteous law of God, and contrary thereunto__WCF_SCRIPTURE_REF n. doth, in its own nature, bring guilt upon the sinner__WCF_SCRIPTURE_REF o. whereby he is bound over to the 
 
 
@@ -526,10 +526,10 @@ Matt. 25:41. Then shall he say also unto them on the left hand, Depart from me, 
 Isa. 40:13-17. Who hath directed the Spirit of the LORD, or being his counseller hath taught him? With whom took he counsel, and who instructed him, and taught him in the path of judgment, and taught him knowledge, and shewed to him the way of understanding? Behold, the nations are as a drop of a bucket, and are counted as the small dust of the balance: behold, he taketh up the isles as a very little thing. And Lebanon is not sufficient to burn, nor the beasts thereof sufficient for a burnt offering. All nations before him are as nothing; and they are counted to him less than nothing, and vanity.  Job 9:32-33. For he is not a man, as I am, that I should answer him, and we should come together in judgment. Neither is there any daysman betwixt us, that might lay his hand upon us both. Ps. 113:5-6. Who is like unto the LORD our God, who dwelleth on high, who humbleth himself to behold the things that are in heaven, and in the earth!  Job 22:2-3. Can a man be profitable unto God, as he that is wise may be profitable unto himself ? Is it any pleasure to the Almighty, that thou art 
 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   The first covenant made with man was a covenant of works__WCF_SCRIPTURE_REF b. wherein life was promised to Adam; and in him to his posterity__WCF_SCRIPTURE_REF c. upon condition of perfect and personal obedience. __WCF_SCRIPTURE_REF d. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   Man, by his fall, having made himself uncapable of life by that covenant, the Lord was pleased to make a second__WCF_SCRIPTURE_REF e. commonly called the covenant of grace; wherein he freely offereth unto sinners life 
 
 
@@ -548,10 +548,10 @@ Gal. 3:21. Is the law then against the promises of God? God forbid: for if there
 
 
 and salvation by Jesus Christ; requiring of them faith in him, that they may be saved__WCF_SCRIPTURE_REF f. and promising to give unto all those that are ordained unto eternal life his Holy Spirit, to make them willing, and able to believe. __WCF_SCRIPTURE_REF g. 
-4. 
+ __WCF__PARAGRAPH__ 4. 
 This covenant of grace is frequently set forth in Scripture by the name of a testament, in reference to the death of Jesus Christ the Testator, and to the everlasting inheritance, with all things belonging to it, therein bequeathed. __WCF_SCRIPTURE_REF h. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   This covenant was differently administered in the time of the law, and in the time of the gospel__WCF_SCRIPTURE_REF i. under the law, it was administered 
 
 
@@ -703,7 +703,7 @@ Matt. 27:60. ' and laid it in his own new tomb, which he had hewn out in the roc
 
 
 dead__WCF_SCRIPTURE_REF e. with the same body in which he suffered__WCF_SCRIPTURE_REF f. with which also he ascended into heaven, and there sitteth at the right hand of his Father__WCF_SCRIPTURE_REF g. making intercession__WCF_SCRIPTURE_REF h. and shall return, to judge men and angels, at the end of the world. __WCF_SCRIPTURE_REF i. 
-5. The Lord Jesus, by his perfect obedience, and sacrifice of him.self, which he, through the eternal Spirit, once offered up unto God, hath fully satisfied the justice of his Father__WCF_SCRIPTURE_REF k. and purchased, not only 
+ __WCF__PARAGRAPH__ 5. The Lord Jesus, by his perfect obedience, and sacrifice of him.self, which he, through the eternal Spirit, once offered up unto God, hath fully satisfied the justice of his Father__WCF_SCRIPTURE_REF k. and purchased, not only 
  WCF_PROOF e. 
 1 Cor. 15:3-4. For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; and that he was buried, and that he rose again the third day according to the scriptures. 
 
@@ -724,15 +724,15 @@ Rom. 5:19. For as by one man's disobedience many were made sinners, so by the ob
 
 
 reconciliation, but an everlasting inheritance in the kingdom of heaven, for all those whom the Father hath given unto him. __WCF_SCRIPTURE_REF l. 
-6. Although the work of redemption was not actually wrought by Christ till after his incarnation, yet the virtue, efficacy, and benefits thereof were communicated unto the elect, in all ages successively from the beginning of the world, in and by those promises, types, and sacrifices, wherein he was revealed, and signified to be the seed of the woman which should bruise the serpent's head; and the Lamb slain from the beginning of the world; being yesterday and today the same, and forever. __WCF_SCRIPTURE_REF m. 
+ __WCF__PARAGRAPH__ 6. Although the work of redemption was not actually wrought by Christ till after his incarnation, yet the virtue, efficacy, and benefits thereof were communicated unto the elect, in all ages successively from the beginning of the world, in and by those promises, types, and sacrifices, wherein he was revealed, and signified to be the seed of the woman which should bruise the serpent's head; and the Lamb slain from the beginning of the world; being yesterday and today the same, and forever. __WCF_SCRIPTURE_REF m. 
 to God, purge your conscience from dead works to serve the living God?  Heb. 10:14. For by one offering he hath perfected for ever them that are sanctified.  Eph. 5:2. ' and walk in love, as Christ also hath loved us, and hath given himself for us an offering and a sacrifice to God for a sweetsmelling savour. Rom. 3:25-26. ' whom God hath set forth to be a propitiation through faith in his blood, to declare his righ.teousness for the remission of sins that are past, through the forbearance of God; to declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believeth in Jesus. 
  WCF_PROOF l. Dan. 9:24. Seventy weeks are determined upon thy people and upon thy holy city, to finish the transgression, and to make an end of sins, and to make reconciliation for iniquity, and to bring in everlasting righteousness, and to seal up the vision and prophecy, and to anoint the most Holy. 2 Cor. 5:18. And all things are of God, who hath reconciled us to himself by Jesus Christ, and hath given to us the ministry of reconciliation. Col. 1:20. ' and, having made peace through the blood of his cross, by him to reconcile all things unto himself; by him, I say, whether they be things in earth, or things in heaven. Eph. 1:11, 14. ' in whom also we have obtained an inheritance, being predestinated according to the purpose of him who worketh all things after the counsel of his own will.' which is the earnest of our inheritance until the redemption of the purchased possession, unto the praise of his glory. Heb. 9:12, 
 15. Neither by the blood of goats and calves, but by his own blood he entered in once into the holy place, having obtained eternal redemption for us.' And for this cause he is the mediator of the new testament, that by means of death, for the redemption of the transgressions that were under the first testament, they which are called might receive the promise of eternal inheritance.  John 17:2. ' as thou hast given him power over all flesh, that he should give eternal life to as many as thou hast given him. 
  WCF_PROOF m.  Gal. 4:4-5. But when the fulness of the time was come, God sent forth his Son, made of a woman, made under the law, to redeem them that were under the law, that we might receive the adoption of sons. Gen. 3:15. And I will put enmity be.tween thee and the woman, and between thy seed and her seed; it shall bruise thy head, and thou shalt bruise his heel.  1 Cor. 10:4. And [our fathers] did all drink the same spiritual drink: for they drank of that spiritual Rock that followed them: and that Rock was Christ. Rev. 13:8. And all that dwell upon the earth shall worship him, whose names are not written in the book of life of the Lamb slain from the foundation of the world. Heb. 13:8. Jesus Christ the same yesterday, and to day, and for ever. See Rom. 3:25; Heb. 9:15. 
-7.
+ __WCF__PARAGRAPH__ 7.
   Christ, in the work of mediation, acts according to both na.tures, by each nature doing that which is proper to itself__WCF_SCRIPTURE_REF n. yet, by reason of the unity of the person, that which is proper to one nature is sometimes in Scripture attributed to the person denominated by the other nature. __WCF_SCRIPTURE_REF o. 
 
-8. 
+ __WCF__PARAGRAPH__ 8. 
 To all those for whom Christ hath purchased redemption, he doth certainly and effectually apply and communicate the same__WCF_SCRIPTURE_REF p. making intercession for them__WCF_SCRIPTURE_REF q. and revealing unto them, in and by the Word, the mysteries of salvation__WCF_SCRIPTURE_REF r. effectually persuading them by his Spirit to believe and obey, and governing their hearts by his Word 
 
 
@@ -904,10 +904,10 @@ Rom. 4:5-8. But to him that worketh not, but believeth on him that justifieth th
 John 1:12. But as many as received him, to them gave he power to become the sons of God, even to them that believe on his name.  Acts 10:43. To him give all the prophets witness, that through his name whosoever believeth in him shall receive re.mission of sins.  Acts 13:38-39. Be it known unto you therefore, men and brethren, 
 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   Faith, thus receiving and resting on Christ and his righteous.ness, is the alone instrument of justification__WCF_SCRIPTURE_REF d. yet is it not alone in the person justified, but is ever accompanied with all other saving graces, and is no dead faith, but worketh by love. __WCF_SCRIPTURE_REF e. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   Christ, by his obedience and death, did fully discharge the debt of all those that are thus justified, and did make a proper, real, and full satisfaction to his Father's justice in their behalf. __WCF_SCRIPTURE_REF f. Yet, inas.
 
 
@@ -943,10 +943,10 @@ Rom. 3:24. ' being justified freely by his grace through the redemption that is 
 Rom. 3:26. ' to declare, I say, at this time his righteousness: that he might be just, and the justifier of him which believeth in Jesus.  Eph. 2:7. ' that in the ages to come he might shew the exceeding riches of his grace in his kindness toward us through Christ Jesus.  Zech. 9:9. Rejoice greatly, O daughter of Zion; shout, O daughter of Jerusalem: behold, thy King cometh unto thee: he is just, and having salvation; lowly, and riding upon an ass, and upon a colt the foal of an ass. Isa. 45:21. Tell ye, and bring them near; yea, let them take counsel together: who hath declared this from ancient time? who hath told it from that time? have not I the LORD? and there is no God else beside me; a just God and a Saviour; there is none beside me. 
 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   God did, from all eternity, decree to justify all the elect__WCF_SCRIPTURE_REF l. and Christ did, in the fullness of time, die for their sins, and rise again for their justification__WCF_SCRIPTURE_REF m. nevertheless, they are not justified, until the Holy Spirit doth, in due time, actually apply Christ unto them. __WCF_SCRIPTURE_REF n. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   God doth continue to forgive the sins of those that are justified__WCF_SCRIPTURE_REF o. and, although they can never fall from the state of justification__WCF_SCRIPTURE_REF p. yet 
 
 
@@ -1029,7 +1029,7 @@ Heb. 6:12. ' that ye be not slothful, but followers of them who through faith an
 
 
 __WCF_CHAPTER__Of Sanctification 
-1. They, who are once effectually called, and regenerated, having a new heart, and a new spirit created in them, are further sanctified, really and personally, through the virtue of Christ's death and resurrection__WCF_SCRIPTURE_REF a. by his Word and Spirit dwelling in them__WCF_SCRIPTURE_REF b. the domin.
+ __WCF__PARAGRAPH__ 1. They, who are once effectually called, and regenerated, having a new heart, and a new spirit created in them, are further sanctified, really and personally, through the virtue of Christ's death and resurrection__WCF_SCRIPTURE_REF a. by his Word and Spirit dwelling in them__WCF_SCRIPTURE_REF b. the domin.
  WCF_PROOF a. 1 Thess. 5:23-24. And the very God of peace sanctify you wholly; and I pray God your whole spirit and soul and body be preserved blameless unto the coming of our Lord Jesus Christ. Faithful is he that calleth you, who also will do it. 2 Thess. 2:13-14. But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanc.tification of the Spirit and belief of the truth: whereunto he called you by our gospel, to the obtaining of the glory of our Lord Jesus Christ.  Ezek. 36:22-28. Therefore say unto the house of Israel, Thus saith the Lord GOD; I do not this for your sakes, O house of Israel, but for mine holy name's sake, which ye have profaned among the heathen, whither ye went. And I will sanctify my great name, which was profaned among the heathen, which ye have profaned in the midst of them; and the heathen shall know that I am the LORD, saith the Lord GOD, when I shall be sanctified in you before their eyes. For I will take you from among the heathen, and gather you out of all countries, and will bring you into your own land. Then will I sprinkle clean water upon you, and ye shall be clean: from all your filthiness, and from all your idols, will I cleanse you. A new heart also will I give you, and a new spirit will I put within you: and I will take away the stony heart out of your flesh, and I will give you an heart of flesh. And I will put my spirit within you, and cause you to walk in my statutes, and ye shall keep my judgments, and do them. And ye shall dwell in the land that I gave to your fathers; and ye shall be my people, and I will be your God.  Titus 3:5. Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing of regeneration, and renewing of the Holy Ghost. Acts 20:32. And now, brethren, I commend you to God, and to the word of his grace, which is able to build you up, and to give you an inheritance among all them which are sanctified. Phil. 
 3:10.
  ' that I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unto his death. Rom. 6:5-6. For if we have been planted together in the likeness of his death, we shall be also in the likeness of his resurrection: knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin. 
@@ -1040,7 +1040,7 @@ John 17:17, 19. Sanctify them through thy truth: thy word is truth.' And for the
 
 5:26. ' that he might sanctify and cleanse it with the washing of water by the word. Rom. 8:13-14. For if ye live after the flesh, ye shall die: but if ye through the Spirit do mortify the deeds of the body, ye shall live. For as many as are led by the Spirit of God, they are the sons of God. 2 Thess. 2:13. But we are bound to give thanks alway to God for you, brethren beloved of the Lord, because God hath from the beginning chosen you to salvation through sanctification of the Spirit and belief of the truth. 
 ion of the whole body of sin is destroyed__WCF_SCRIPTURE_REF c. and the several lusts thereof are more and more weakened and mortified__WCF_SCRIPTURE_REF d. and they more and more quickened and strengthened in all saving graces__WCF_SCRIPTURE_REF e. to the prac.tice of true holiness, without which no man shall see the Lord. __WCF_SCRIPTURE_REF f. 
-2. This sanctification is throughout, in the whole man__WCF_SCRIPTURE_REF g. yet im.perfect in this life, there abiding still some remnants of corruption in every part__WCF_SCRIPTURE_REF h. whence ariseth a continual and irreconcilable war, the 
+ __WCF__PARAGRAPH__ 2. This sanctification is throughout, in the whole man__WCF_SCRIPTURE_REF g. yet im.perfect in this life, there abiding still some remnants of corruption in every part__WCF_SCRIPTURE_REF h. whence ariseth a continual and irreconcilable war, the 
  WCF_PROOF c. 
 Rom. 6:6, 14. ' knowing this, that our old man is crucified with him, that the body of sin might be destroyed, that henceforth we should not serve sin.' For sin shall not have dominion over you: for ye are not under the law, but under grace. 
 
@@ -1132,10 +1132,10 @@ Heb. 6:11-12. And we desire that every one of you do shew the same dili.gence to
 who is both the author and finisher of our faith. __WCF_SCRIPTURE_REF n. 
 
 __WCF_CHAPTER__Of Repentance unto Life 
-1.
+ __WCF__PARAGRAPH__ 1.
   Repentance unto life is an evangelical grace__WCF_SCRIPTURE_REF a. the doctrine whereof is to be preached by every minister of the gospel, as well as that of faith in Christ. __WCF_SCRIPTURE_REF b. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   By it, a sinner, out of the sight and sense not only of the dan.ger, but also of the filthiness and odiousness of his sins, as contrary to the holy nature, and righteous law of God; and upon the apprehen.sion of his mercy in Christ to such as are penitent, so grieves for, and hates his sins, as to turn from them all unto God__WCF_SCRIPTURE_REF c. purposing and 
 
 
@@ -1172,13 +1172,13 @@ Hos. 14:2, 4. Take with you words, and turn to the LORD: say unto him, Take away
 Luke 13:3, 5. I tell you, Nay: but, except ye repent, ye shall all likewise per.ish.' I tell you, Nay: but, except ye repent, ye shall all likewise perish. Mark 1:4. John did baptize in the wilderness, and preach the baptism of repentance for the 
 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   As there is no sin so small, but it deserves damnation__WCF_SCRIPTURE_REF h. so there is no sin so great, that it can bring damnation upon those who truly repent. __WCF_SCRIPTURE_REF i. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   Men ought not to content themselves with a general repen.tance, but it is every man's duty to endeavor to repent of his particu.lar sins, particularly. __WCF_SCRIPTURE_REF k. 
 
-6.
+ __WCF__PARAGRAPH__ 6.
   As every man is bound to make private confession of his sins to God, praying for the pardon thereof__WCF_SCRIPTURE_REF l. upon which, and the forsaking 
 
 
@@ -1273,7 +1273,7 @@ Luke 17:10. So likewise ye, when ye shall have done all those things which are c
 Rom. 3:20. Therefore by the deeds of the law there shall no flesh be justified in his sight: for by the law is the knowledge of sin. Rom. 4:2, 4, 6. For if Abraham were justified by works, he hath whereof to glory; but not before God.' Now to him that worketh is the reward not reckoned of grace, but of debt.' Even as David also describeth the blessedness of the man, unto whom God imputeth righteousness with.out works. Eph. 2:8-9. For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: not of works, lest any man should boast. Titus 3:5- 
 
 
-7. Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing of regeneration, and renewing of the Holy Ghost; which he shed on us abundantly through Jesus Christ our Saviour; that being justified by his grace, we should be made heirs according to the hope of eternal life. Rom. 8:18, 22-24. For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us.' For we know that the whole creation groaneth and travaileth in pain together until now. And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body. For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for?  Ps. 16:2. O my soul, thou hast said unto the LORD, Thou art my Lord: my goodness extendeth not to thee. Job 22:2-3. Can a man be profitable unto God, as he that is wise may be profitable unto himself? Is it any pleasure to the Almighty, that thou art righteous? or is it gain to him that thou makest thy ways perfect?  Job 35:7-8. If thou be righteous, what givest thou him? or what receiveth he of thine hand? Thy wickedness may hurt a man as thou art; and thy righteousness may profit the son of man. 
+ __WCF__PARAGRAPH__ 7. Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing of regeneration, and renewing of the Holy Ghost; which he shed on us abundantly through Jesus Christ our Saviour; that being justified by his grace, we should be made heirs according to the hope of eternal life. Rom. 8:18, 22-24. For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be revealed in us.' For we know that the whole creation groaneth and travaileth in pain together until now. And not only they, but ourselves also, which have the firstfruits of the Spirit, even we ourselves groan within ourselves, waiting for the adoption, to wit, the redemption of our body. For we are saved by hope: but hope that is seen is not hope: for what a man seeth, why doth he yet hope for?  Ps. 16:2. O my soul, thou hast said unto the LORD, Thou art my Lord: my goodness extendeth not to thee. Job 22:2-3. Can a man be profitable unto God, as he that is wise may be profitable unto himself? Is it any pleasure to the Almighty, that thou art righteous? or is it gain to him that thou makest thy ways perfect?  Job 35:7-8. If thou be righteous, what givest thou him? or what receiveth he of thine hand? Thy wickedness may hurt a man as thou art; and thy righteousness may profit the son of man. 
 can, we have done but our duty, and are unprofitable servants__WCF_SCRIPTURE_REF r. and because, as they are good, they proceed from his Spirit__WCF_SCRIPTURE_REF s. and as they are wrought by us, they are defiled, and mixed with so much weak.ness and imperfection, that they cannot endure the severity of God's judgment. __WCF_SCRIPTURE_REF t. 
 __WCF__PARAGRAPH__ 6. Notwithstanding, the persons of believers being accepted through Christ, their good works also are accepted in him__WCF_SCRIPTURE_REF u. not as though they were in this life wholly unblamable and unreprovable in God's sight__WCF_SCRIPTURE_REF w. but that he, looking upon them in his Son, is pleased to accept and reward that which is sincere, although accompanied with many weaknesses and imperfections. __WCF_SCRIPTURE_REF x. 
  WCF_PROOF r. 
@@ -1295,7 +1295,7 @@ Job 9:20. If I justify myself, mine own mouth shall condemn me: if I say, I am p
 Heb. 13:20-21. Now the God of peace, that brought again from the dead our Lord Jesus, that great shepherd of the sheep, through the blood of the everlasting covenant, make you perfect in every good work to do his will, working in you that which is wellpleasing in his sight, through Jesus Christ; to whom be glory for ever and ever. Amen.  2 Cor. 8:12. For if there be first a willing mind, it is accepted according to that a man hath, and not according to that he hath not. Heb. 6:10. For God is not unrighteous to forget your work and labour of love, which ye have shewed toward his 
 
 
-7. Works done by unregenerate men, although for the matter of them they may be things which God commands; and of good use both to themselves and others__WCF_SCRIPTURE_REF y. yet, because they proceed not from an heart purified by faith__WCF_SCRIPTURE_REF z. nor are done in a right manner, according to the Word__WCF_SCRIPTURE_REF a. nor to a right end, the glory of God__WCF_SCRIPTURE_REF b. they 
+ __WCF__PARAGRAPH__ 7. Works done by unregenerate men, although for the matter of them they may be things which God commands; and of good use both to themselves and others__WCF_SCRIPTURE_REF y. yet, because they proceed not from an heart purified by faith__WCF_SCRIPTURE_REF z. nor are done in a right manner, according to the Word__WCF_SCRIPTURE_REF a. nor to a right end, the glory of God__WCF_SCRIPTURE_REF b. they 
 name, in that ye have ministered to the saints, and do minister.  Matt. 25:21, 23. His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord.' His lord said unto him, Well done, good and faithful servant; thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord. 1 Cor. 3:14. If any man's work abide which he hath built there.upon, he shall receive a reward. 1 Cor. 4:5. Therefore judge nothing before the time, until the Lord come, who both will bring to light the hidden things of darkness, and will make manifest the counsels of the hearts: and then shall every man have praise of God. 
  WCF_PROOF y. 
 2 Kings 10:30-31. And the LORD said unto Jehu, Because thou hast done well in executing that which is right in mine eyes, and hast done unto the house of Ahab according to all that was in mine heart, thy children of the fourth generation shall sit on the throne of Israel. But Jehu took no heed to walk in the law of the LORD God of Israel with all his heart: for he departed not from the sins of Jeroboam, which made Israel to sin. 1 Kings 21:27, 29. And it came to pass, when Ahab heard those words, that he rent his clothes, and put sackcloth upon his flesh, and fasted, and lay in sackcloth, and went softly.' Seest thou how Ahab humbleth himself before me? be.cause he humbleth himself before me, I will not bring the evil in his days: but in his son's days will I bring the evil upon his house. Luke 6:32-34. For if ye love them which love you, what thank have ye? for sinners also love those that love them. And if ye do good to them which do good to you, what thank have ye? for sinners also do even the same. And if ye lend to them of whom ye hope to receive, what thank have ye? for sinners also lend to sinners, to receive as much again.  Luke 18:2-7. ' saying, There was in a city a judge, which feared not God, neither regarded man: and there was a widow in that city; and she came unto him, saying, Avenge me of mine adversary. And he would not for a while: but afterward he said within himself, Though I fear not God, nor regard man; yet because this widow troubleth me, I will avenge her, lest by her continual coming she weary me. And the Lord said, Hear what the unjust judge saith. And shall not God avenge his own elect, which cry day and night unto him, though he bear long with them?  See Rom. 13:4. 
@@ -1311,7 +1311,7 @@ Heb. 11:4, 6. By faith Abel offered unto God a more excellent sacrifice than Cai
 are therefore sinful, and cannot please God, or make a man meet to receive grace from God__WCF_SCRIPTURE_REF c. and yet, their neglect of them is more sinful and displeasing unto God. __WCF_SCRIPTURE_REF d. 
 
 __WCF_CHAPTER__Of the Perseverance of the Saints 
-1. They, whom God hath accepted in his Beloved, effectually called, and sanctified by his Spirit, can neither totally nor finally fall away from the state of grace, but shall certainly persevere therein to 
+ __WCF__PARAGRAPH__ 1. They, whom God hath accepted in his Beloved, effectually called, and sanctified by his Spirit, can neither totally nor finally fall away from the state of grace, but shall certainly persevere therein to 
 trumpet before thee, as the hypocrites do in the synagogues and in the streets, that they may have glory of men. Verily I say unto you, They have their reward.' And when thou prayest, thou shalt not be as the hypocrites are: for they love to pray stand.ing in the synagogues and in the corners of the streets, that they may be seen of men. Verily I say unto you, They have their reward.' Moreover when ye fast, be not, as the hypocrites, of a sad countenance: for they disfigure their faces, that they may appear unto men to fast. Verily I say unto you, They have their reward. 1 Cor. 10:31. Whether therefore ye eat, or drink, or whatsoever ye do, do all to the glory of God. 
  WCF_PROOF c. 
 Prov. 21:27. The sacrifice of the wicked is abomination: how much more, when he bringeth it with a wicked mind?  Hag. 2:14. Then answered Haggai, and said, So is this people, and so is this nation before me, saith the LORD; and so is every work of their hands; and that which they offer there is unclean. Titus 1:15. Unto the pure all things are pure: but unto them that are defiled and unbelieving is nothing pure; but even their mind and conscience is defiled.  Amos 5:21-22. I hate, I despise your feast days, and I will not smell in your solemn assemblies. Though ye offer me burnt offerings and your meat offerings, I will not accept them: neither will I regard the peace offerings of your fat beasts. Mark 7:6-7. He answered and said unto them, Well hath Esaias prophesied of you hypocrites, as it is written, This people honoureth me with their lips, but their heart is far from me. Howbeit in vain do they worship me, teaching for doctrines the commandments of men.  Hos. 1:4. And the LORD said unto him, Call his name Jezreel; for yet a little while, and I will avenge the blood of Jezreel upon the house of Jehu, and will cause to cease the kingdom of the house of Israel.  Rom. 9:16. So then it is not of him that willeth, nor of him that runneth, but of God that sheweth mercy. Titus 3:5. Not by works of righteousness which we have done, but according to his mercy he saved us, by the washing of regen.eration, and renewing of the Holy Ghost. 
@@ -1385,10 +1385,10 @@ Ps. 89:31-32. If they break my statutes, and keep not my commandments; then will
 11:32. But when we are judged, we are chastened of the Lord, that we should not be condemned with the world. 
 
 __WCF_CHAPTER__Of the Assurance of Grace and Salvation 
-1. 
+ __WCF__PARAGRAPH__ 1. 
 Although hypocrites and other unregenerate men may vainly deceive themselves with false hopes and carnal presumptions of be.ing in the favor of God, and estate of salvationa (which hope of theirs shall perishb): yet such as truly believe in the Lord Jesus, and love him in sincerity, endeavoring to walk in all good conscience before him, may, in this life, be certainly assured that they are in the state of grace__WCF_SCRIPTURE_REF c. and may rejoice in the hope of the glory of God, which hope shall never make them ashamed. __WCF_SCRIPTURE_REF d. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   This certainty is not a bare conjectural and probable persua.sion grounded upon a fallible hope__WCF_SCRIPTURE_REF e. but an infallible assurance of 
 
 
@@ -1617,10 +1617,10 @@ __WCF__PARAGRAPH__ 1. The light of nature showeth that there is a God, who hath 
 instituted by himself, and so limited by his own revealed will, that he may not be worshiped according to the imaginations and devices of men, or the suggestions of Satan, under any visible representation, or any other way not prescribed in the Holy Scripture. __WCF_SCRIPTURE_REF b. 
 our God is one LORD: and thou shalt love the LORD thy God with all thine heart, and with all thy soul, and with all thy might. 
  WCF_PROOF b. Deut. 12:32. What thing soever I command you, observe to do it: thou shalt not add thereto, nor diminish from it. Matt. 15:9. But in vain they do worship me, teaching for doctrines the commandments of men.  Acts 17:23-25. For as I passed by, and beheld your devotions, I found an altar with this inscription, TO THE UN.KNOWN GOD. Whom therefore ye ignorantly worship, him declare I unto you. God that made the world and all things therein, seeing that he is Lord of heaven and earth, dwelleth not in temples made with hands; neither is worshipped with men's hands, as though he needed any thing, seeing he giveth to all life, and breath, and all things. Matt. 4:9-10. And [the devil] saith unto him, All these things will I give thee, if thou wilt fall down and worship me. Then saith Jesus unto him, Get thee hence, Satan: for it is written, Thou shalt worship the Lord thy God, and him only shalt thou serve. Deut. 4:15-20. Take ye therefore good heed unto yourselves; for ye saw no manner of similitude on the day that the LORD spake unto you in Horeb out of the midst of the fire: lest ye corrupt yourselves, and make you a graven image, the similitude of any figure, the likeness of male or female, the likeness of any beast that is on the earth, the likeness of any winged fowl that flieth in the air, the likeness of any thing that creepeth on the ground, the likeness of any fish that is in the waters beneath the earth: and lest thou lift up thine eyes unto heaven, and when thou seest the sun, and the moon, and the stars, even all the host of heaven, shouldest be driven to worship them, and serve them, which the LORD thy God hath divided unto all nations under the whole heaven. But the LORD hath taken you, and brought you forth out of the iron furnace, even out of Egypt, to be unto him a people of inheritance, as ye are this day. Ex. 20:4-6. Thou shalt not make unto thee any graven image, or any likeness of any thing that is in heaven above, or that is in the earth beneath, or that is in the water under the earth: thou shalt not bow down thyself to them, nor serve them: for I the LORD thy God am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate me; and shewing mercy unto thousands of them that love me, and keep my commandments.  John 4:23-24. But the hour cometh, and now is, when the true worshippers shall worship the Father in spirit and in truth: for the Father seeketh such to worship him. God is a Spirit: and they that worship him must worship him in spirit and in truth. Col. 2:18-23. Let no man beguile you of your reward in a voluntary humility and worshipping of angels, intruding into those things which he hath not seen, vainly puffed up by his fleshly mind, and not holding the Head, from which all the body by joints and bands having nourishment minis.tered, and knit together, increaseth with the increase of God. Wherefore if ye be dead with Christ from the rudiments of the world, why, as though living in the world, are ye subject to ordinances, (touch not; taste not; handle not; which all are to perish with the using;) after the commandments and doctrines of men? Which things have indeed a shew of wisdom in will worship, and humility, and neglecting of the body; not in any honour to the satisfying of the flesh. 
-2.
+ __WCF__PARAGRAPH__ 2.
   Religious worship is to be given to God, the Father, Son, and Holy Ghost; and to him alone__WCF_SCRIPTURE_REF c. not to angels, saints, or any other creature__WCF_SCRIPTURE_REF d. and, since the fall, not without a Mediator; nor in the me.diation of any other but of Christ alone. __WCF_SCRIPTURE_REF e. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   Prayer, with thanksgiving, being one special part of religious worship__WCF_SCRIPTURE_REF f. is by God required of all men__WCF_SCRIPTURE_REF g. and, that it may be 
 
 
@@ -1747,7 +1747,7 @@ Matt. 6:6, 16-18. But thou, when thou prayest, enter into thy closet, and when t
 Isa. 56:6-7. Also the sons of the stranger, that join themselves to the LORD, to serve him, and to love the name of the LORD, to be his servants, every one that keepeth the sabbath from polluting it, and taketh hold of my covenant; even them will I bring to my holy mountain, and make them joyful in my house of prayer: their burnt offer.ings and their sacrifices shall be accepted upon mine altar; for mine house shall be called an house of prayer for all people.  Heb. 10:25. Not forsaking the assembling of ourselves together, as the manner of some is; but exhorting one another: and so much the more, as ye see the day approaching. Ps. 100:4. Enter into his gates with thanksgiving, and into his courts with praise: be thankful unto him, and bless his name. Ps. 122:1. I was glad when they said unto me, Let us go into the house of the LORD. Ps. 84:1-12. How amiable are thy tabernacles, O LORD of hosts! My soul longeth, yea, even fainteth for the courts of the LORD: my heart and my flesh crieth out for the living God.' For a day in thy courts is better than a thousand. I had rather be a doorkeeper in the house of my God, than to dwell in the tents of wickedness.' O LORD of hosts, blessed is the man that trusteth in thee. Luke 4:16. And he came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read.  Acts 13:42, 44. And when the Jews were gone out of the synagogue, the Gentiles besought that these words 
 
 
-7. As it is the law of nature, that, in general, a due proportion of time be set apart for the worship of God; so, in his Word, by a posi.tive, moral, and perpetual commandment binding all men in all ages, he hath particularly appointed one day in seven, for a Sabbath, to be kept holy unto him__WCF_SCRIPTURE_REF k. which, from the beginning of the world to the resurrection of Christ, was the last day of the week; and, from the resurrection of Christ, was changed into the first day of the week__WCF_SCRIPTURE_REF l. which, in Scripture, is called the Lord's Day__WCF_SCRIPTURE_REF m. and is to be continued to the end of the world, as the Christian Sabbath. __WCF_SCRIPTURE_REF n. 
+ __WCF__PARAGRAPH__ 7. As it is the law of nature, that, in general, a due proportion of time be set apart for the worship of God; so, in his Word, by a posi.tive, moral, and perpetual commandment binding all men in all ages, he hath particularly appointed one day in seven, for a Sabbath, to be kept holy unto him__WCF_SCRIPTURE_REF k. which, from the beginning of the world to the resurrection of Christ, was the last day of the week; and, from the resurrection of Christ, was changed into the first day of the week__WCF_SCRIPTURE_REF l. which, in Scripture, is called the Lord's Day__WCF_SCRIPTURE_REF m. and is to be continued to the end of the world, as the Christian Sabbath. __WCF_SCRIPTURE_REF n. 
 might be preached to them the next sabbath.' And the next sabbath day came al.most the whole city together to hear the word of God.  Acts 2:42. And they contin.ued stedfastly in the apostles' doctrine and fellowship, and in breaking of bread, and in prayers. 
  WCF_PROOF k.  
 Ex. 20:8-11. Remember the sabbath day, to keep it holy. Six days shalt thou labour, and do all thy work: but the seventh day is the sabbath of the LORD thy God: in it thou shalt not do any work, thou, nor thy son, nor thy daughter, thy manservant, nor thy maidservant, nor thy cattle, nor thy stranger that is within thy gates: for in six days the LORD made heaven and earth, the sea, and all that in them is, and rested the sev.enth day: wherefore the LORD blessed the sabbath day, and hallowed it.  Isa. 56:2-7. Blessed is the man that doeth this, and the son of man that layeth hold on it; that keepeth the sabbath from polluting it, and keepeth his hand from doing any evil. Nei.ther let the son of the stranger, that hath joined himself to the LORD, speak, saying, The LORD hath utterly separated me from his people: neither let the eunuch say, Be.hold, I am a dry tree. For thus saith the LORD unto the eunuchs that keep my sabbaths, and choose the things that please me, and take hold of my covenant; even unto them will I give in mine house and within my walls a place and a name better than of sons and of daughters: I will give them an everlasting name, that shall not be cut off. Also the sons of the stranger, that join themselves to the LORD, to serve him, and to love the name of the LORD, to be his servants, every one that keepeth the sabbath from pollut.ing it, and taketh hold of my covenant; even them will I bring to my holy mountain, and make them joyful in my house of prayer: their burnt offerings and their sacrifices shall be accepted upon mine altar; for mine house shall be called an house of prayer for all people. 
@@ -1769,10 +1769,10 @@ presses on the sabbath, and bringing in sheaves, and lading asses; as also wine,
 13. At that time Jesus went on the sabbath day through the corn; and his disciples were an hungred, and began to pluck the ears of corn, and to eat. But when the Pharisees saw it, they said unto him, Behold, thy disciples do that which is not lawful to do upon the sabbath day. But he said unto them, Have ye not read what David did, when he was an hungred, and they that were with him; how he entered into the house of God, and did eat the shewbread, which was not lawful for him to eat, neither for them which were with him, but only for the priests? Or have ye not read in the law, how that on the sabbath days the priests in the temple profane the sabbath, and are blameless? But I say unto you, That in this place is one greater than the temple. But if ye had known what this meaneth, I will have mercy, and not sacrifice, ye would not have condemned the guiltless. For the Son of man is Lord even of the sabbath day. And when he was departed thence, he went into their synagogue: and, behold, there was a man which had his hand withered. And they asked him, saying, Is it lawful to heal on the sabbath days? that they might accuse him. And he said unto them, What man shall there be among you, that shall have one sheep, and if it fall into a pit on the sabbath day, will he not lay hold on it, and lift it out? How much then is a man better than a sheep? Wherefore it is lawful to do well on the sabbath days. Then saith he to the man, Stretch forth thine hand. And he stretched it forth; and it was restored whole, like as the other.  Mark 3:1-5. And he entered again into the synagogue; and there 
 
 __WCF_CHAPTER__Of Lawful Oaths and Vows 
-1.
+ __WCF__PARAGRAPH__ 1.
   A lawful oath is a part of religious worship__WCF_SCRIPTURE_REF a. wherein, upon just occasion, the person swearing solemnly calleth God to witness what he asserteth, or promiseth, and to judge him according to the truth or falsehood of what he sweareth. __WCF_SCRIPTURE_REF b. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   The name of God only is that by which men ought to swear, and therein it is to be used with all holy fear and reverence. __WCF_SCRIPTURE_REF c. There.fore, to swear vainly, or rashly, by that glorious and dreadful Name; 
 
 
@@ -1788,7 +1788,7 @@ Deut. 6:13. Thou shalt fear the LORD thy God, and serve him, and shalt swear by 
 
 
 or, to swear at all by any other thing, is sinful, and to be abhorred. __WCF_SCRIPTURE_REF d. Yet, as in matters of weight and moment, an oath is warranted by the Word of God, under the new testament as well as under the old__WCF_SCRIPTURE_REF e. so a lawful oath, being imposed by lawful authority, in such matters, ought to be taken. __WCF_SCRIPTURE_REF f. 
-3. Whosoever taketh an oath ought duly to consider the weighti.ness of so solemn an act, and therein to avouch nothing but what he is fully persuaded is the truth__WCF_SCRIPTURE_REF g. neither may any man bind himself by oath to anything but what is good and just, and what he believeth so to be, and what he is able and resolved to perform. __WCF_SCRIPTURE_REF h. 
+ __WCF__PARAGRAPH__ 3. Whosoever taketh an oath ought duly to consider the weighti.ness of so solemn an act, and therein to avouch nothing but what he is fully persuaded is the truth__WCF_SCRIPTURE_REF g. neither may any man bind himself by oath to anything but what is good and just, and what he believeth so to be, and what he is able and resolved to perform. __WCF_SCRIPTURE_REF h. 
  WCF_PROOF d. 
 Ex. 20:7. Thou shalt not take the name of the LORD thy God in vain; for the LORD will not hold him guiltless that taketh his name in vain.  Jer. 5:7. How shall I pardon thee for this? thy children have forsaken me, and sworn by them that are no gods: when I had fed them to the full, they then committed adultery, and assembled themselves by troops in the harlots' houses.  Matt. 5:33-37. Again, ye have heard that it hath been said by them of old time, Thou shalt not forswear thyself, but shalt perform unto the Lord thine oaths: but I say unto you, Swear not at all; neither by heaven; for it is God's throne: nor by the earth; for it is his footstool: neither by Jerusa.lem; for it is the city of the great King. Neither shalt thou swear by thy head, because thou canst not make one hair white or black. But let your communication be, Yea, yea; Nay, nay: for whatsoever is more than these cometh of evil.  James 5:12. But above all things, my brethren, swear not, neither by heaven, neither by the earth, neither by any other oath: but let your yea be yea; and your nay, nay; lest ye fall into condemnation. 
 
@@ -1803,7 +1803,7 @@ Ex. 20:7. Thou shalt not take the name of the LORD thy God in vain; for the LORD
 
 
  WCF_PROOF h.  Gen. 24:2-9. And Abraham said unto his eldest servant of his house, that 
-4. An oath is to be taken in the plain and common sense of the words, without equivocation, or mental reservation. __WCF_SCRIPTURE_REF i. It cannot oblige to sin; but in anything not sinful, being taken, it binds to performance, although to a man's own hurt. __WCF_SCRIPTURE_REF k. Nor is it to be violated, although made to heretics, or infidels. __WCF_SCRIPTURE_REF l. 
+ __WCF__PARAGRAPH__ 4. An oath is to be taken in the plain and common sense of the words, without equivocation, or mental reservation. __WCF_SCRIPTURE_REF i. It cannot oblige to sin; but in anything not sinful, being taken, it binds to performance, although to a man's own hurt. __WCF_SCRIPTURE_REF k. Nor is it to be violated, although made to heretics, or infidels. __WCF_SCRIPTURE_REF l. 
 ruled over all that he had, Put, I pray thee, thy hand under my thigh: and I will make thee swear by the LORD, the God of heaven, and the God of the earth, that thou shalt not take a wife unto my son of the daughters of the Canaanites, among whom I dwell.' And the servant put his hand under the thigh of Abraham his master, and sware to him concerning that matter. Neh. 5:12-13. Then said they, We will restore them, and will require nothing of them; so will we do as thou sayest. Then I called the priests, and took an oath of them, that they should do according to this promise. Also I shook my lap, and said, So God shake out every man from his house, and from his labour, that performeth not this promise, even thus be he shaken out, and emptied. And all the congregation said, Amen, and praised the LORD. And the people did ac.cording to this promise.  Eccl. 5:2, 5. Be not rash with thy mouth, and let not thine heart be hasty to utter any thing before God: for God is in heaven, and thou upon earth: therefore let thy words be few.' Better is it that thou shouldest not vow, than that thou shouldest vow and not pay. 
  WCF_PROOF i.  
 Jer. 4:2. And thou shalt swear, The LORD liveth, in truth, in judgment, and in righteousness; and the nations shall bless themselves in him, and in him shall they glory. Ps. 24:4. He that hath clean hands, and a pure heart; who hath not lifted up his soul unto vanity, nor sworn deceitfully. 
@@ -1819,10 +1819,10 @@ Jer. 4:2. And thou shalt swear, The LORD liveth, in truth, in judgment, and in r
 Ezek. 17:16-19. As I live, saith the Lord GOD, surely in the place where the king dwelleth that made him king, whose oath he despised, and whose covenant he brake, even with him in the midst of Babylon he shall die. Neither shall Pharaoh with his mighty army and great company make for him in the war, by casting up mounts, and building forts, to cut off many persons: seeing he despised the oath by breaking the covenant, when, lo, he had given his hand, and hath done all these things, he shall not escape. Therefore thus saith the Lord GOD; As I live, surely mine oath that he hath despised, and my covenant that he hath broken, even it will I recompense upon his own head.  Josh. 9:18-19. And the children of Israel smote them not, because the princes of the congregation had sworn unto them by the LORD God of Israel. And all the congregation murmured against the princes. But all the princes said unto all the congregation, We have sworn unto them by the LORD God of Israel: now therefore we may not touch them.  2 Sam. 21:1. Then there was a famine in the days of David 
 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   A vow is of the like nature with a promissory oath, and ought to be made with the like religious care, and to be performed with the like faithfulness. __WCF_SCRIPTURE_REF m. 
 
-6.
+ __WCF__PARAGRAPH__ 6.
   It is not to be made to any creature, but to God alone__WCF_SCRIPTURE_REF n. and, that it may be accepted, it is to be made voluntarily, out of faith, and conscience of duty, in way of thankfulness for mercy received, or for the obtaining of what we want, whereby we more strictly bind our.selves to necessary duties; or, to other things, so far and so long as they may fitly conduce thereunto. __WCF_SCRIPTURE_REF o. 
 
 
@@ -1848,10 +1848,10 @@ Matt. 19:11-12. But he said unto them, All men cannot receive this saying, save 
 
 
 __WCF_CHAPTER__Of the Civil Magistrate 
-1.
+ __WCF__PARAGRAPH__ 1.
   God, the supreme Lord and King of all the world, hath or.dained civil magistrates, to be, under him, over the people, for his own glory, and the public good: and, to this end, hath armed them with the power of the sword, for the defense and encouragement of them that are good, and for the punishment of evildoers. __WCF_SCRIPTURE_REF a. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   It is lawful for Christians to accept and execute the office of a magistrate, when called thereunto__WCF_SCRIPTURE_REF b. in the managing whereof, as they 
 
 
@@ -1927,10 +1927,10 @@ Mark 10:42-44. But Jesus called them to him, and saith unto them, Ye know that t
 Gen. 2:24. Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh. Matt. 19:4-6. And he answered and said unto them, Have ye not read, that he which made them at the beginning made them male and female, and said, For this cause shall a man leave father and mother, and shall cleave to his wife: and they twain shall be one flesh? Wherefore they are no 
 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   Marriage was ordained for the mutual help of husband and wife__WCF_SCRIPTURE_REF b. for the increase of mankind with legitimate issue, and of the church with an holy seed__WCF_SCRIPTURE_REF c. and for preventing of uncleanness. __WCF_SCRIPTURE_REF d. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   It is lawful for all sorts of people to marry, who are able with judgment to give their consent. __WCF_SCRIPTURE_REF e. Yet it is the duty of Christians to marry only in the Lord. __WCF_SCRIPTURE_REF f. And therefore such as profess the true re.formed religion should not marry with infidels, papists, or other idola.ters: neither should such as are godly be unequally yoked, by marry.ing with such as are notoriously wicked in their life, or maintain 
 
 
@@ -1952,10 +1952,10 @@ Heb. 13:4. Marriage is honourable in all, and the bed undefiled: but whoremonger
 
 
 damnable heresies. __WCF_SCRIPTURE_REF g. 
-4.
+ __WCF__PARAGRAPH__ 4.
   Marriage ought not to be within the degrees of consanguinity or affinity forbidden by the Word. __WCF_SCRIPTURE_REF h. Nor can such incestuous mar.riages ever be made lawful by any law of man or consent of parties, so as those persons may live together as man and wife. __WCF_SCRIPTURE_REF i. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   Adultery or fornication committed after a contract, being de.tected before marriage, giveth just occasion to the innocent party to dissolve that contract. __WCF_SCRIPTURE_REF k. In the case of adultery after marriage, it is 
 
 
@@ -2103,10 +2103,10 @@ Ex. 12:48. And when a stranger shall sojourn with thee, and will keep the passov
 
 10:21. Ye cannot drink the cup of the Lord, and the cup of devils: ye cannot be partakers of the Lord's table, and of the table of devils. 
  WCF_PROOF e. Rom. 6:3-4. Know ye not, that so many of us as were baptized into Jesus 
-2.
+ __WCF__PARAGRAPH__ 2.
   There is, in every sacrament, a spiritual relation, or sacramen.tal union, between the sign and the thing signified: whence it comes to pass, that the names and effects of the one are attributed to the other. __WCF_SCRIPTURE_REF f. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   The grace which is exhibited in or by the sacraments rightly used, is not conferred by any power in them; neither doth the effi.cacy of a sacrament depend upon the piety or intention of him that doth administer it__WCF_SCRIPTURE_REF g. but upon the work of the Spirit__WCF_SCRIPTURE_REF h. and the word of institution, which contains, together with a precept authorizing the use thereof, a promise of benefit to worthy receivers. __WCF_SCRIPTURE_REF i. 
 
 
@@ -2124,10 +2124,10 @@ Rom. 2:28-29. For he is not a Jew, which is one outwardly; neither is that circu
 Matt. 26:26-28. And as they were eating, Jesus took bread, and blessed it, and brake it, and gave it to the disciples, and said, Take, eat; this is my body. And he took the cup, and gave thanks, and gave it to them, saying, Drink ye all of it; for this is my blood of the new testament, which is shed for many for the remission of sins.  Luke 22:19-20. And he took bread, and gave thanks, and brake it, and gave unto them, saying, This is my body which is given for you: this do in remembrance of me. Like.wise also the cup after supper, saying, This cup is the new testament in my blood, 
 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   There be only two sacraments ordained by Christ our Lord in the gospel; that is to say, baptism, and the Supper of the Lord: nei.ther of which may be dispensed by any, but by a minister of the Word lawfully ordained. __WCF_SCRIPTURE_REF k. 
 
-5.
+ __WCF__PARAGRAPH__ 5.
   The sacraments of the old testament, in regard of the spiritual things thereby signified and exhibited, were, for substance, the same with those of the new. __WCF_SCRIPTURE_REF l. 
 
 
@@ -2172,10 +2172,10 @@ Matt. 28:19-20. Go ye therefore, and teach all nations, baptizing them in the na
 Acts 10:47. Can any man forbid water, that these should not be baptized, which have received the Holy Ghost as well as we?  Acts 8:36, 38. And as they went on their way, they came unto a certain water: and the eunuch said, See, here is water; 
 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   Dipping of the person into the water is not necessary; but baptism is rightly administered by pouring, or sprinkling water upon the person. __WCF_SCRIPTURE_REF k. 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   Not only those that do actually profess faith in and obedience unto Christ__WCF_SCRIPTURE_REF l. but also the infants of one, or both, believing parents, are to be baptized. __WCF_SCRIPTURE_REF m. 
 
 
@@ -2200,10 +2200,10 @@ Rom. 4:11. And he received the sign of circumcision, a seal of the righteous.nes
 
 
 that are baptized are undoubtedly regenerated. __WCF_SCRIPTURE_REF p. 
-6.
+ __WCF__PARAGRAPH__ 6.
   The efficacy of baptism is not tied to that moment of time wherein it is administered__WCF_SCRIPTURE_REF q. yet, notwithstanding, by the right use of this ordinance, the grace promised is not only offered, but really ex.hibited, and conferred, by the Holy Ghost, to such (whether of age or infants) as that grace belongeth unto, according to the counsel of God's own will, in his appointed time. __WCF_SCRIPTURE_REF r. 
 
-7.
+ __WCF__PARAGRAPH__ 7.
   The sacrament of baptism is but once to be administered unto any person. __WCF_SCRIPTURE_REF s. 
 
 
@@ -2223,10 +2223,10 @@ Rom. 6:3-11. Know ye not, that so many of us as were baptized into Jesus Christ 
 
 
 __WCF_CHAPTER__Of the Lord's Supper 
-1.
+ __WCF__PARAGRAPH__ 1.
   Our Lord Jesus, in the night wherein he was betrayed, insti.tuted the sacrament of his body and blood, called the Lord's Supper, to be observed in his church, unto the end of the world, for the per.petual remembrance of the sacrifice of himself in his death; the seal.ing all benefits thereof unto true believers, their spiritual nourish.ment and growth in him, their further engagement in and to all du.ties which they owe unto him; and, to be a bond and pledge of their communion with him, and with each other, as members of his mys.tical body. __WCF_SCRIPTURE_REF a. 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   In this sacrament, Christ is not offered up to his Father; nor any real sacrifice made at all, for remission of sins of the quick or dead__WCF_SCRIPTURE_REF b. but only a commemoration of that one offering up of himself, 
 
 
@@ -2253,10 +2253,10 @@ Matt. 26:26-28. And as they were eating, Jesus took bread, and blessed it, and b
 
 
 congregation. __WCF_SCRIPTURE_REF f. 
-4.
+ __WCF__PARAGRAPH__ 4.
   Private Masses, or receiving this sacrament by a priest, or any other, alone__WCF_SCRIPTURE_REF g. as likewise, the denial of the cup to the people__WCF_SCRIPTURE_REF h. wor.shiping the elements, the lifting them up, or carrying them about, for adoration, and the reserving them for any pretended religious use; are all contrary to the nature of this sacrament, and to the institution of Christ. __WCF_SCRIPTURE_REF i. 
 
-5. 
+ __WCF__PARAGRAPH__ 5. 
 The outward elements in this sacrament, duly set apart to the uses ordained by Christ, have such relation to him crucified, as that, truly, yet sacramentally only, they are sometimes called by the name of the things they represent, to wit, the body and blood of Christ__WCF_SCRIPTURE_REF k. 
 
 
@@ -2276,13 +2276,13 @@ Matt. 15:9. But in vain they do worship me, teaching for doctrines the com.mandm
 
  WCF_PROOF k.  Matt. 26:26-28. And as they were eating, Jesus took bread, and blessed it, 
 albeit, in substance and nature, they still remain truly and only bread and wine, as they were before. __WCF_SCRIPTURE_REF l. 
-6. 
+ __WCF__PARAGRAPH__ 6. 
 That doctrine which maintains a change of the substance of bread and wine, into the substance of Christ's body and blood (com.monly called transubstantiation) by consecration of a priest, or by any other way, is repugnant, not to Scripture alone, but even to com.mon sense, and reason; overthroweth the nature of the sacrament, and hath been, and is, the cause of manifold superstitions; yea, of gross idolatries. __WCF_SCRIPTURE_REF m. 
 
-7.
+ __WCF__PARAGRAPH__ 7.
   Worthy receivers, outwardly partaking of the visible elements, in this sacrament__WCF_SCRIPTURE_REF n. do then also, inwardly by faith, really and indeed, yet not carnally and corporally, but spiritually, receive, and feed upon, Christ crucified, and all benefits of his death: the body and blood of Christ being then, not corporally or carnally, in, with, or under the bread and wine; yet, as really, but spiritually, present to the faith of believers in that ordinance, as the elements themselves are to their outward senses. __WCF_SCRIPTURE_REF o. 
 
-8.
+ __WCF__PARAGRAPH__ 8.
   Although ignorant and wicked men receive the outward ele.ments in this sacrament; yet, they receive not the thing signified 
 
 
@@ -2314,10 +2314,10 @@ __WCF__PARAGRAPH__ 1. The Lord Jesus, as King and Head of his church, hath there
 Isa. 9:6-7. For unto us a child is born, unto us a son is given: and the govern.ment shall be upon his shoulder: and his name shall be called Wonderful, Counseller, The mighty God, The everlasting Father, The Prince of Peace. Of the increase of his government and peace there shall be no end, upon the throne of David, and upon his kingdom, to order it, and to establish it with judgment and with justice from hence.forth even for ever. The zeal of the LORD of hosts will perform this.  Col. 1:18. And 
 
 
-2.
+ __WCF__PARAGRAPH__ 2.
   To these officers the keys of the kingdom of heaven are com.mitted; by virtue whereof, they have power, respectively, to retain, and remit sins; to shut that kingdom against the impenitent, both by the Word, and censures; and to open it unto penitent sinners, by the ministry of the gospel; and by absolution from censures, as occasion shall require. __WCF_SCRIPTURE_REF b. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   Church censures are necessary, for the reclaiming and gaining of offending brethren, for deterring of others from the like offenses, for purging out of that leaven which might infect the whole lump, for vindicating the honor of Christ, and the holy profession of the gos-
 
 
@@ -2352,10 +2352,10 @@ Acts 15:1-35. See footnote b above. Acts 20:17. And from Miletus he sent to Ephe
 
 
 controversies of faith, and cases of conscience; to set down rules and directions for the better ordering of the public worship of God, and government of his church; to receive complaints in cases of malad.ministration, and authoritatively to determine the same: which de.crees and determinations, if consonant to the Word of God, are to be received with reverence and submission; not only for their agree.ment with the Word, but also for the power whereby they are made, as being an ordinance of God appointed thereunto in his Word. __WCF_SCRIPTURE_REF d. 
-3.
+ __WCF__PARAGRAPH__ 3.
   All synods or councils, since the apostles' times, whether gen.eral or particular, may err; and many have erred. Therefore they are not to be made the rule of faith, or practice; but to be used as a help in both. __WCF_SCRIPTURE_REF e. 
 
-4.
+ __WCF__PARAGRAPH__ 4.
   Synods and councils are to handle, or conclude nothing, but that which is ecclesiastical: and are not to intermeddle with civil af.fairs which concern the commonwealth, unless by way of humble 
 
 
@@ -2385,10 +2385,10 @@ Heb. 12:23. ' to the general assembly and church of the firstborn, which are wri
 
 
 And the souls of the wicked are cast into hell, where they remain in torments and utter darkness, reserved to the judgment of the great day. __WCF_SCRIPTURE_REF d. Beside these two places, for souls separated from their bodies, the Scripture acknowledgeth none. 
-2. 
+ __WCF__PARAGRAPH__ 2. 
 At the last day, such as are found alive shall not die, but be changed__WCF_SCRIPTURE_REF e. and all the dead shall be raised up, with the selfsame bod.ies, and none other (although with different qualities), which shall be united again to their souls forever. __WCF_SCRIPTURE_REF f. 
 
-3.
+ __WCF__PARAGRAPH__ 3.
   The bodies of the unjust shall, by the power of Christ, be raised to dishonor: the bodies of the just, by his Spirit, unto honor; 
 
 
@@ -2421,7 +2421,7 @@ Jude 6. And the angels which kept not their first estate, but left their own hab
 2 Cor. 5:10. For we must all appear before the judgment seat of Christ; that every one may receive the things done in his body, according to that he hath done, whether it be good or bad.  Eccl. 12:14. For God shall bring every work into judg.ment, with every secret thing, whether it be good, or whether it be evil.  Rom. 2:16. In the day when God shall judge the secrets of men by Jesus Christ according to my gospel.  Rom. 14:10, 12. But why dost thou judge thy brother? or why dost thou set at nought thy brother? for we shall all stand before the judgment seat of Christ.' So 
 
 
-2. The end of God's appointing this day is for the manifestation of the glory of his mercy, in the eternal salvation of the elect; and of his justice, in the damnation of the reprobate, who are wicked and disobedient. For then shall the righteous go into everlasting life, and receive that fullness of joy and refreshing, which shall come from the presence of the Lord: but the wicked, who know not God, and obey not the gospel of Jesus Christ, shall be cast into eternal torments, and be punished with everlasting destruction from the presence of the Lord, and from the glory of his power. __WCF_SCRIPTURE_REF e. 
+ __WCF__PARAGRAPH__ 2. The end of God's appointing this day is for the manifestation of the glory of his mercy, in the eternal salvation of the elect; and of his justice, in the damnation of the reprobate, who are wicked and disobedient. For then shall the righteous go into everlasting life, and receive that fullness of joy and refreshing, which shall come from the presence of the Lord: but the wicked, who know not God, and obey not the gospel of Jesus Christ, shall be cast into eternal torments, and be punished with everlasting destruction from the presence of the Lord, and from the glory of his power. __WCF_SCRIPTURE_REF e. 
 then every one of us shall give account of himself to God.  Matt. 12:36-37. But I say unto you, That every idle word that men shall speak, they shall give account thereof in the day of judgment. For by thy words thou shalt be justified, and by thy words thou shalt be condemned. 
  WCF_PROOF e. Matt. 25:31-46. When the Son of man shall come in his glory, and all the holy angels with him, then shall he sit upon the throne of his glory: and before him shall be gathered all nations: and he shall separate them one from another, as a shep.herd divideth his sheep from the goats: and he shall set the sheep on his right hand, but the goats on the left. Then shall the King say unto them on his right hand, Come, ye blessed of my Father, inherit the kingdom prepared for you from the foundation of the world: for I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in: naked, and ye clothed me: I was sick, and ye visited me: I was in prison, and ye came unto me.' Then shall he say also unto them on the left hand, Depart from me, ye cursed, into everlasting fire, prepared for the devil and his angels: for I was an hungred, and ye gave me no meat: I was thirsty, and ye gave me no drink: I was a stranger, and ye took me not in: naked, and ye clothed me not: sick, and in prison, and ye visited me not.' And these shall go away into everlasting pun.ishment: but the righteous into life eternal.  Rom. 2:5-6. But after thy hardness and impenitent heart treasurest up unto thyself wrath against the day of wrath and revela.tion of the righteous judgment of God; who will render to every man according to his deeds. Rom. 9:22-23. What if God, willing to shew his wrath, and to make his power known, endured with much longsuffering the vessels of wrath fitted to destruc.tion: and that he might make known the riches of his glory on the vessels of mercy, which he had afore prepared unto glory. Matt. 25:21. His lord said unto him, Well done, thou good and faithful servant: thou hast been faithful over a few things, I will make thee ruler over many things: enter thou into the joy of thy lord. Acts 3:19. Repent ye therefore, and be converted, that your sins may be blotted out, when the times of refreshing shall come from the presence of the Lord. 2 Thess. 1:7-10. ' and to you who are troubled rest with us, when the Lord Jesus shall be revealed from heaven with his mighty angels, in flaming fire taking vengeance on them that know not God, and that obey not the gospel of our Lord Jesus Christ: who shall be punished with everlasting destruction from the presence of the Lord, and from the glory of his power; when he shall come to be glorified in his saints, and to be admired in all them that believe (because our testimony among you was believed) in that day. Mark 9:48. Where their worm dieth not, and the fire is not quenched. 
 __WCF__PARAGRAPH__ 3. As Christ would have us to be certainly persuaded that there shall be a day of judgment, both to deter all men from sin; and for the greater consolation of the godly in their adversity__WCF_SCRIPTURE_REF f. so will he have that day unknown to men, that they may shake off all carnal security, and be always watchful, because they know not at what hour the Lord will come; and may be ever prepared to say, Come Lord Jesus, come quickly, Amen. __WCF_SCRIPTURE_REF g. 
