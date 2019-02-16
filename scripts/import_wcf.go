@@ -38,6 +38,10 @@ func readCSV() {
 	fmt.Println("HERE")
 }
 
+// func parseParagraphs(data []byte) []byte {
+
+// }
+
 func parseTitles(data []byte) []byte {
 	sliceOfWords := strings.Fields(string(data))
 	endIndexForTitle := 1
