@@ -38,24 +38,37 @@ func readCSV() {
 	fmt.Println("HERE")
 }
 
-// func parseParagraphs(data []byte) []byte {
-
-// }
+func parseParagraphs(data []byte) []byte {
+	sliceOfWords := strings.Fields(string(data))
+	var token []byte
+	indexesForEachParagraph := []int{}
+	for i, word := range sliceOfWords {
+		if word == "__WCF_PARAGRAPH__" {
+			indexesForEachParagraph = append(indexesForEachParagraph, i+1)
+		}
+	}
+	fmt.Println("length of paragraphs: ", len(indexesForEachParagraph))
+	for i, indexForParagraph := range indexesForEachParagraph {
+		paragraph := sliceOfWords[indexForParagraph:indexesForEachParagraph[i+1]]
+		fmt.Println("YO ", paragraph)
+	}
+	return token
+}
 
 func parseTitles(data []byte) []byte {
-	sliceOfWords := strings.Fields(string(data))
-	endIndexForTitle := 1
 	var token []byte
+	sliceOfWords := strings.Fields(string(data))
+	begin := 0
+	end := 1
 	for i, word := range sliceOfWords {
-		// fmt.Println(len(sliceOfWords))
-		if strings.HasPrefix(word, "__WCF_CHAPTER__") {
-			arrayWithTitle := sliceOfWords[i+1 : i+7]
-			for index, w := range arrayWithTitle {
-				if w == "__WCF_PARAGRAPH__" {
-					endIndexForTitle = index
-					// creating a slice of bytes
-					wcfHeading := []byte(strings.Join(arrayWithTitle[0:endIndexForTitle], " "))
-					token = append(token, wcfHeading...)
+		if word == "__WCF_CHAPTER__" {
+			begin = i + 1
+			for x, nextWord := range sliceOfWords[begin:] {
+				if nextWord == "__WCF_PARAGRAPH__" || strings.HasPrefix("__WCF", nextWord) {
+					end = x + begin
+					title := []byte(strings.Join(sliceOfWords[begin:end], " "))
+					token = append(token, title...)
+					break
 				}
 			}
 		}
@@ -74,23 +87,22 @@ func splitWCF(data []byte, atEOF bool) (advance int, token []byte, err error) {
 		return 0, nil, err
 	}
 
-	arrayOfTitles := parseTitles(data)
-	// arrayOfParagraphs :=
+	wcfToken := parseTitles(data)
+	// wcfToken = append(wcfToken, parseParagraphs(data)...)
 	// arrayOfScriptureReferences :=
 
-	return len(data), arrayOfTitles, nil
+	return len(data), wcfToken, nil
 }
 
 func main() {
-	// readCSV()
+	// perhaps should not use scan here. Ran into an issue where split fn was not working only because the data chunk contained only part of a word
 	f, _ := os.Open("./WCF.txt")
 	s := bufio.NewScanner(f)
 	s.Split(splitWCF)
 	wcf := []wcfChapter{}
 	for s.Scan() {
 		// Right now just getting the chapter title, but would ideally like to grab the entire chapter and return it as a text block
-		fmt.Println("YO", s.Text())
 		wcf = append(wcf, wcfChapter{Title: s.Text()})
 	}
-	fmt.Println(wcf)
+	fmt.Println(wcf, "length ", len(wcf))
 }
