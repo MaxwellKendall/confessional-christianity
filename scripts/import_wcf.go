@@ -51,7 +51,7 @@ func parseTitles(data []byte) []byte {
 		if strings.HasPrefix(word, "__WCF_CHAPTER__") {
 			arrayWithTitle := sliceOfWords[i+1 : i+7]
 			for index, w := range arrayWithTitle {
-				if w == "1." {
+				if w == "__WCF_PARAGRAPH__" {
 					endIndexForTitle = index
 					// creating a slice of bytes
 					wcfHeading := []byte(strings.Join(arrayWithTitle[0:endIndexForTitle], " "))
@@ -89,6 +89,7 @@ func main() {
 	wcf := []wcfChapter{}
 	for s.Scan() {
 		// Right now just getting the chapter title, but would ideally like to grab the entire chapter and return it as a text block
+		fmt.Println("YO", s.Text())
 		wcf = append(wcf, wcfChapter{Title: s.Text()})
 	}
 	fmt.Println(wcf)
