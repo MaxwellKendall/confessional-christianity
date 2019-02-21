@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bufio"
 	"encoding/csv"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"strings"
@@ -64,7 +64,7 @@ func parseTitles(data []byte) []byte {
 		if word == "__WCF_CHAPTER__" {
 			begin = i + 1
 			for x, nextWord := range sliceOfWords[begin:] {
-				if nextWord == "__WCF_PARAGRAPH__" || strings.HasPrefix("__WCF", nextWord) {
+				if nextWord == "__WCF_PARAGRAPH__" {
 					end = x + begin
 					title := []byte(strings.Join(sliceOfWords[begin:end], " "))
 					token = append(token, title...)
@@ -76,33 +76,17 @@ func parseTitles(data []byte) []byte {
 	return token
 }
 
-func splitWCF(data []byte, atEOF bool) (advance int, token []byte, err error) {
-	// "tokenizes" the wcf into bite size pieces so we can parse it into a go struct
-	if atEOF {
-		fmt.Println("HEY")
-		return 0, nil, nil
-	}
-	if err != nil {
-		fmt.Println(err)
-		return 0, nil, err
-	}
+func parseWCF(data []byte) []wcfChapter {
+	wcf := []wcfChapter{}
 
-	wcfToken := parseTitles(data)
-	// wcfToken = append(wcfToken, parseParagraphs(data)...)
-	// arrayOfScriptureReferences :=
-
-	return len(data), wcfToken, nil
 }
 
 func main() {
-	// perhaps should not use scan here. Ran into an issue where split fn was not working only because the data chunk contained only part of a word
-	f, _ := os.Open("./WCF.txt")
-	s := bufio.NewScanner(f)
-	s.Split(splitWCF)
-	wcf := []wcfChapter{}
-	for s.Scan() {
-		// Right now just getting the chapter title, but would ideally like to grab the entire chapter and return it as a text block
-		wcf = append(wcf, wcfChapter{Title: s.Text()})
+	// wcf := []wcfChapter{}
+	content, err := ioutil.ReadFile("WCF.txt")
+	if err != nil {
+		log.Fatal(err)
 	}
-	fmt.Println(wcf, "length ", len(wcf))
+
+	fmt.Println(string(content))
 }
