@@ -11,7 +11,7 @@ import (
 
 type wcfParagraph struct {
 	Content         string            `json:"content"`
-	ScriptureProofs map[string]string `json:"scripture_proofes"`
+	ScriptureProofs map[string]string `json:"scripture_proofs"`
 }
 
 type wcfChapter struct {
@@ -55,38 +55,38 @@ func parseParagraphs(data []byte) []byte {
 	return token
 }
 
-func parseTitles(data []byte) []byte {
-	var token []byte
+func parseTitles(data []byte) []wcfChapter {
 	sliceOfWords := strings.Fields(string(data))
 	begin := 0
 	end := 1
+	chapterNumber := 0
+	confession := []wcfChapter{}
 	for i, word := range sliceOfWords {
 		if word == "__WCF_CHAPTER__" {
 			begin = i + 1
 			for x, nextWord := range sliceOfWords[begin:] {
 				if nextWord == "__WCF_PARAGRAPH__" {
+					chapterNumber++
 					end = x + begin
-					title := []byte(strings.Join(sliceOfWords[begin:end], " "))
-					token = append(token, title...)
+					title := strings.Join(sliceOfWords[begin:end], " ")
+					confession = append(confession, wcfChapter{Title: title, Number: chapterNumber})
 					break
 				}
 			}
 		}
 	}
-	return token
-}
-
-func parseWCF(data []byte) []wcfChapter {
-	wcf := []wcfChapter{}
-
+	return confession
 }
 
 func main() {
-	// wcf := []wcfChapter{}
+	wcf := []wcfChapter{}
 	content, err := ioutil.ReadFile("WCF.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
+	wcf = parseTitles(content)
+
 	fmt.Println(string(content))
+	fmt.Println(wcf)
 }
