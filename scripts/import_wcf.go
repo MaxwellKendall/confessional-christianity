@@ -1,11 +1,9 @@
 package main
 
 import (
-	"encoding/csv"
 	"fmt"
 	"io/ioutil"
 	"log"
-	"os"
 	"strings"
 )
 
@@ -20,27 +18,13 @@ type wcfChapter struct {
 	Paragraphs []wcfParagraph `json:"paragraphs"`
 }
 
-func readCSV() {
-	// gives me a pointer to a File which implements the Reader Interface
-	fileToBeRead, err := os.Open("../WCF.csv")
-	if err != nil {
-		log.Fatalln(err)
-	}
+func parseWCF(data []byte) []wcfChapter {
 
-	csvReaderFn := csv.NewReader(fileToBeRead)
-	records, err := csvReaderFn.ReadAll()
-
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	fmt.Println(records[0][1])
-	fmt.Println("HERE")
 }
 
-func parseParagraphs(data []byte) []byte {
+func parseParagraphs(data []byte, wcf []wcfChapter) []wcfChapter {
+	confession := wcf
 	sliceOfWords := strings.Fields(string(data))
-	var token []byte
 	indexesForEachParagraph := []int{}
 	for i, word := range sliceOfWords {
 		if word == "__WCF_PARAGRAPH__" {
@@ -49,10 +33,16 @@ func parseParagraphs(data []byte) []byte {
 	}
 	fmt.Println("length of paragraphs: ", len(indexesForEachParagraph))
 	for i, indexForParagraph := range indexesForEachParagraph {
-		paragraph := sliceOfWords[indexForParagraph:indexesForEachParagraph[i+1]]
-		fmt.Println("YO ", paragraph)
+		var paragraph []string
+		if i != len(indexesForEachParagraph)-1 {
+			paragraph = sliceOfWords[indexForParagraph:indexesForEachParagraph[i+1]]
+		} else {
+			paragraph = sliceOfWords[:indexForParagraph]
+		}
+		// confession = append(confession, wcfChapter{})
+		// confession.find(() => )
 	}
-	return token
+	return confession
 }
 
 func parseTitles(data []byte) []wcfChapter {
@@ -79,13 +69,12 @@ func parseTitles(data []byte) []wcfChapter {
 }
 
 func main() {
-	wcf := []wcfChapter{}
 	content, err := ioutil.ReadFile("WCF.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	wcf = parseTitles(content)
+	wcf := parseWCF(content)
 
 	fmt.Println(string(content))
 	fmt.Println(wcf)
