@@ -18,54 +18,88 @@ type wcfChapter struct {
 	Paragraphs []wcfParagraph `json:"paragraphs"`
 }
 
+const (
+	wcfChapterAnnotation            = "__WCF_CHAPTER__"
+	wcfParagraphAnnotation          = "__WCF_PARAGRAPH__"
+	wcfScriptureReferenceAnnotation = "__WCF_SCRIPTURE_REF"
+	wcfScriptureProofAnnotation     = "WCF_PROOF"
+)
+
 func parseWCF(data []byte) []wcfChapter {
+	wcfWords := strings.Fields(string(data))
+	confession := []wcfChapter{}
+	chapterIndexStart := 0
+	chapterIndexEnd := 1
+	chapterNumber := 0
+	for i, word := range wcfWords {
+		if word == wcfChapterAnnotation {
+			chapterNumber++
+			chapterIndexStart = i
+			for x, nextWord := range wcfWords[chapterIndexStart+1:] {
+				currentIndexRelativeToWcfWords := chapterIndexStart + x + 1
+				if nextWord == wcfChapterAnnotation {
+					chapterIndexEnd = x + chapterIndexStart
+					break
+				} else if currentIndexRelativeToWcfWords >= len(wcfWords)-1 {
+					chapterIndexEnd = len(wcfWords) - 1
+					break
+				}
+			}
 
-}
+			newChapter := wcfChapter{
+				Title:      getChapterTitle(wcfWords[chapterIndexStart:chapterIndexEnd]),
+				Number:     chapterNumber,
+				Paragraphs: getChapterParagraph(wcfWords[chapterIndexStart:chapterIndexEnd]),
+			}
 
-func parseParagraphs(data []byte, wcf []wcfChapter) []wcfChapter {
-	confession := wcf
-	sliceOfWords := strings.Fields(string(data))
-	indexesForEachParagraph := []int{}
-	for i, word := range sliceOfWords {
-		if word == "__WCF_PARAGRAPH__" {
-			indexesForEachParagraph = append(indexesForEachParagraph, i+1)
+			confession = append(confession, newChapter)
 		}
-	}
-	fmt.Println("length of paragraphs: ", len(indexesForEachParagraph))
-	for i, indexForParagraph := range indexesForEachParagraph {
-		var paragraph []string
-		if i != len(indexesForEachParagraph)-1 {
-			paragraph = sliceOfWords[indexForParagraph:indexesForEachParagraph[i+1]]
-		} else {
-			paragraph = sliceOfWords[:indexForParagraph]
-		}
-		// confession = append(confession, wcfChapter{})
-		// confession.find(() => )
 	}
 	return confession
 }
 
-func parseTitles(data []byte) []wcfChapter {
-	sliceOfWords := strings.Fields(string(data))
-	begin := 0
-	end := 1
-	chapterNumber := 0
-	confession := []wcfChapter{}
-	for i, word := range sliceOfWords {
-		if word == "__WCF_CHAPTER__" {
-			begin = i + 1
-			for x, nextWord := range sliceOfWords[begin:] {
-				if nextWord == "__WCF_PARAGRAPH__" {
-					chapterNumber++
-					end = x + begin
-					title := strings.Join(sliceOfWords[begin:end], " ")
-					confession = append(confession, wcfChapter{Title: title, Number: chapterNumber})
+func getChapterParagraph(wcfWords []string) []wcfParagraph {
+	paragraphs := []wcfParagraph{}
+	paragraphIndexStart := 0
+	paragraphIndexEnd := 1
+	for i, word := range wcfWords {
+		if word == wcfParagraphAnnotation {
+			paragraphIndexStart = i + 1
+			for x, nextWord := range wcfWords[paragraphIndexStart:] {
+				if nextWord == wcfChapterAnnotation || nextWord == wcfScriptureProofAnnotation {
+					paragraphIndexEnd = x + paragraphIndexStart
+					break
+				}
+			}
+			newParagraph := wcfParagraph{
+				Content: strings.Join(wcfWords[paragraphIndexStart:paragraphIndexEnd], " "),
+				// ScriptureProofs: wcfWords[paragraphIndexEnd:]
+			}
+			paragraphs = append(paragraphs, newParagraph)
+		}
+	}
+
+	return paragraphs
+}
+
+func getChapterTitle(wcfWords []string) string {
+	titleIndexStart := 0
+	titleIndexEnd := 1
+
+	title := ""
+	for i, word := range wcfWords {
+		if word == wcfChapterAnnotation {
+			titleIndexStart = i + 1
+			for x, nextWord := range wcfWords[titleIndexStart:] {
+				if nextWord == wcfParagraphAnnotation {
+					titleIndexEnd = titleIndexStart + x
 					break
 				}
 			}
 		}
+		title = strings.Join(wcfWords[titleIndexStart:titleIndexEnd], " ")
 	}
-	return confession
+	return title
 }
 
 func main() {
@@ -76,6 +110,5 @@ func main() {
 
 	wcf := parseWCF(content)
 
-	fmt.Println(string(content))
-	fmt.Println(wcf)
+	fmt.Println("parsed file :", wcf[0])
 }
