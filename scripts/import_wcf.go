@@ -1,3 +1,7 @@
+// TODOs:
+// 1. Filter out annotations
+// 2. Inculude scripture proofs
+
 package main
 
 import (
