@@ -6,22 +6,12 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"strings"
 )
-
-type wcfParagraph struct {
-	Content         string            `json:"content"`
-	ScriptureProofs map[string]string `json:"scripture_proofs"`
-}
-
-type wcfChapter struct {
-	Title      string         `json:"title"`
-	Number     int            `json:"number"`
-	Paragraphs []wcfParagraph `json:"paragraphs"`
-}
 
 const (
 	wcfChapterAnnotation            = "__WCF_CHAPTER__"
@@ -29,6 +19,13 @@ const (
 	wcfScriptureReferenceAnnotation = "__WCF_SCRIPTURE_REF"
 	wcfScriptureProofAnnotation     = "WCF_PROOF"
 )
+
+type wcfChapter struct {
+	Title      string            `json:"title"`
+	Number     int               `json:"number"`
+	Paragraphs []string          `json:"paragraphs"`
+	Proofs     map[string]string `json:"proofs"`
+}
 
 func parseWCF(data []byte) []wcfChapter {
 	wcfWords := strings.Fields(string(data))
@@ -55,6 +52,7 @@ func parseWCF(data []byte) []wcfChapter {
 				Title:      getChapterTitle(wcfWords[chapterIndexStart:chapterIndexEnd]),
 				Number:     chapterNumber,
 				Paragraphs: getChapterParagraph(wcfWords[chapterIndexStart:chapterIndexEnd]),
+				Proofs:     getScriptureProofs(wcfWords[chapterIndexStart:chapterIndexEnd]),
 			}
 
 			confession = append(confession, newChapter)
@@ -68,9 +66,10 @@ func getScriptureProofs(wcfWords []string) map[string]string {
 	for i, word := range wcfWords {
 		if word == wcfScriptureProofAnnotation {
 			counter := 0
-			startIndex := i + 1
+			startIndex := i + 2 // not including alphabetical reference id as it will be the key in the map itself
 			endIndex := 0
-			key := strings.Split(wcfWords[startIndex], ".")[0]
+			key := strings.Split(wcfWords[i+1], ".")[0]
+
 			for x, nextWord := range wcfWords[startIndex:] {
 				if x == len(wcfWords[startIndex:])-1 {
 					endIndex = startIndex + x
@@ -91,19 +90,26 @@ func getScriptureProofs(wcfWords []string) map[string]string {
 func filterAnnotations(wcfWords []string, annotationType string) []string {
 	rtrn := make([]string, 1)
 	for i, word := range wcfWords {
-		if i != 0 && wcfWords[i-1] == annotationType {
-			alphabeticReference := strings.Split(wcfWords[i], ".")
-			parsedWord := strings.Replace(wcfWords[i], wcfWords[i], "("+alphabeticReference[0]+")", -1)
-			rtrn = append(rtrn, parsedWord)
-		} else if word != annotationType {
-			rtrn = append(rtrn, word)
+		switch annotationType {
+		case wcfScriptureReferenceAnnotation:
+			if i != 0 && wcfWords[i-1] == annotationType {
+				alphabeticReference := strings.Split(wcfWords[i], ".")
+				parsedWord := strings.Replace(wcfWords[i], wcfWords[i], "("+alphabeticReference[0]+")", -1)
+				rtrn = append(rtrn, parsedWord)
+			} else if word != annotationType {
+				rtrn = append(rtrn, word)
+			}
+		case wcfScriptureProofAnnotation:
+			if word != annotationType {
+				rtrn = append(rtrn, word)
+			}
 		}
 	}
 	return rtrn
 }
 
-func getChapterParagraph(wcfWords []string) []wcfParagraph {
-	paragraphs := []wcfParagraph{}
+func getChapterParagraph(wcfWords []string) []string {
+	paragraphs := []string{}
 	paragraphIndexStart := 0
 	paragraphIndexEnd := 1
 	for i, word := range wcfWords {
@@ -115,10 +121,7 @@ func getChapterParagraph(wcfWords []string) []wcfParagraph {
 					break
 				}
 			}
-			newParagraph := wcfParagraph{
-				Content:         strings.Join(filterAnnotations(wcfWords[paragraphIndexStart:paragraphIndexEnd], wcfScriptureReferenceAnnotation), " "),
-				ScriptureProofs: getScriptureProofs(wcfWords),
-			}
+			newParagraph := strings.Join(filterAnnotations(wcfWords[paragraphIndexStart:paragraphIndexEnd], wcfScriptureReferenceAnnotation), " ")
 			paragraphs = append(paragraphs, newParagraph)
 		}
 	}
@@ -154,10 +157,16 @@ func main() {
 
 	wcf := parseWCF(content)
 	fmt.Println("*************************************** Title:", wcf[13].Title)
-	fmt.Println("*************************************** Content:", wcf[13].Paragraphs[0].Content)
-	fmt.Println("*************************************** Proof A:", wcf[13].Paragraphs[0].ScriptureProofs["a"])
-	fmt.Println("*************************************** Proof B:", wcf[13].Paragraphs[0].ScriptureProofs["b"])
-	fmt.Println("*************************************** Proof C:", wcf[13].Paragraphs[0].ScriptureProofs["c"])
-	fmt.Println("*************************************** Proof D:", wcf[13].Paragraphs[0].ScriptureProofs["d"])
-	fmt.Println("*************************************** Number of Proofs:", len(wcf[13].Paragraphs[2].ScriptureProofs))
+	fmt.Println("*************************************** Content:", wcf[13].Paragraphs[0])
+	fmt.Println("*************************************** Proof A:", wcf[13].Proofs["a"])
+	fmt.Println("*************************************** Proof B:", wcf[13].Proofs["b"])
+	fmt.Println("*************************************** Proof C:", wcf[13].Proofs["c"])
+	fmt.Println("*************************************** Proof D:", wcf[13].Proofs["d"])
+	fmt.Println("*************************************** Number of Proofs:", len(wcf[13].Proofs))
+
+	test, err := json.Marshal(wcf[0].Proofs)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(string(test))
 }
