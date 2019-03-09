@@ -1,6 +1,8 @@
 // TODOs:
 // 1. Filter out annotations
 // 2. Inculude scripture proofs
+// 3. Get DB Connection
+// 4. Post to DB
 
 package main
 
@@ -62,6 +64,26 @@ func parseWCF(data []byte) []wcfChapter {
 	return confession
 }
 
+func getScriptureProofs(wcfWords []string) map[string]string {
+	rtrn := make(map[string]string)
+	// fmt.Println("heyheyhey", wcfWords)
+	return rtrn
+}
+
+func filterAnnotations(wcfWords []string, annotationType string) []string {
+	rtrn := make([]string, 1)
+	for i, word := range wcfWords {
+		if i != 0 && wcfWords[i-1] == annotationType {
+			alphabeticReference := strings.Split(wcfWords[i], ".")
+			parsedWord := strings.Replace(wcfWords[i], wcfWords[i], "("+alphabeticReference[0]+")", -1)
+			rtrn = append(rtrn, parsedWord)
+		} else if word != annotationType {
+			rtrn = append(rtrn, word)
+		}
+	}
+	return rtrn
+}
+
 func getChapterParagraph(wcfWords []string) []wcfParagraph {
 	paragraphs := []wcfParagraph{}
 	paragraphIndexStart := 0
@@ -70,14 +92,14 @@ func getChapterParagraph(wcfWords []string) []wcfParagraph {
 		if word == wcfParagraphAnnotation {
 			paragraphIndexStart = i + 1
 			for x, nextWord := range wcfWords[paragraphIndexStart:] {
-				if nextWord == wcfChapterAnnotation || nextWord == wcfScriptureProofAnnotation {
+				if nextWord == wcfParagraphAnnotation || nextWord == wcfScriptureProofAnnotation {
 					paragraphIndexEnd = x + paragraphIndexStart
 					break
 				}
 			}
 			newParagraph := wcfParagraph{
-				Content: strings.Join(wcfWords[paragraphIndexStart:paragraphIndexEnd], " "),
-				// ScriptureProofs: wcfWords[paragraphIndexEnd:]
+				Content:         strings.Join(filterAnnotations(wcfWords[paragraphIndexStart:paragraphIndexEnd], wcfScriptureReferenceAnnotation), " "),
+				ScriptureProofs: getScriptureProofs(wcfWords[paragraphIndexEnd:]),
 			}
 			paragraphs = append(paragraphs, newParagraph)
 		}
@@ -114,5 +136,5 @@ func main() {
 
 	wcf := parseWCF(content)
 
-	fmt.Println("parsed file :", wcf[0])
+	fmt.Println("parsed file :", wcf[0].Paragraphs[0])
 }
