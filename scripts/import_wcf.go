@@ -1,8 +1,7 @@
 // TODOs:
-// 1. Filter out annotations
-// 2. Inculude scripture proofs
-// 3. Get DB Connection
-// 4. Post to DB
+// 1. Scripture proofs are currently modled to be mapped by paragraph, but should be mapped by chapter?
+// 2. Get DB Connection
+// 3. Post to DB
 
 package main
 
@@ -66,7 +65,26 @@ func parseWCF(data []byte) []wcfChapter {
 
 func getScriptureProofs(wcfWords []string) map[string]string {
 	rtrn := make(map[string]string)
-	// fmt.Println("heyheyhey", wcfWords)
+	for i, word := range wcfWords {
+		if word == wcfScriptureProofAnnotation {
+			counter := 0
+			startIndex := i + 1
+			endIndex := 0
+			key := strings.Split(wcfWords[startIndex], ".")[0]
+			for x, nextWord := range wcfWords[startIndex:] {
+				if x == len(wcfWords[startIndex:])-1 {
+					endIndex = startIndex + x
+					break
+				} else if nextWord == wcfScriptureProofAnnotation {
+					endIndex = startIndex + x
+					break
+				}
+			}
+			filteredProofs := filterAnnotations(wcfWords[startIndex:endIndex], wcfScriptureProofAnnotation)
+			rtrn[key] = strings.Join(filteredProofs, " ")
+			counter++
+		}
+	}
 	return rtrn
 }
 
@@ -99,7 +117,7 @@ func getChapterParagraph(wcfWords []string) []wcfParagraph {
 			}
 			newParagraph := wcfParagraph{
 				Content:         strings.Join(filterAnnotations(wcfWords[paragraphIndexStart:paragraphIndexEnd], wcfScriptureReferenceAnnotation), " "),
-				ScriptureProofs: getScriptureProofs(wcfWords[paragraphIndexEnd:]),
+				ScriptureProofs: getScriptureProofs(wcfWords),
 			}
 			paragraphs = append(paragraphs, newParagraph)
 		}
@@ -135,6 +153,11 @@ func main() {
 	}
 
 	wcf := parseWCF(content)
-
-	fmt.Println("parsed file :", wcf[0].Paragraphs[0])
+	fmt.Println("*************************************** Title:", wcf[13].Title)
+	fmt.Println("*************************************** Content:", wcf[13].Paragraphs[0].Content)
+	fmt.Println("*************************************** Proof A:", wcf[13].Paragraphs[0].ScriptureProofs["a"])
+	fmt.Println("*************************************** Proof B:", wcf[13].Paragraphs[0].ScriptureProofs["b"])
+	fmt.Println("*************************************** Proof C:", wcf[13].Paragraphs[0].ScriptureProofs["c"])
+	fmt.Println("*************************************** Proof D:", wcf[13].Paragraphs[0].ScriptureProofs["d"])
+	fmt.Println("*************************************** Number of Proofs:", len(wcf[13].Paragraphs[2].ScriptureProofs))
 }
