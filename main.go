@@ -17,11 +17,8 @@ func main() {
 	svc := dynamodb.New(sess)
 	input := &dynamodb.GetItemInput{
 		Key: map[string]*dynamodb.AttributeValue{
-			"id": {
-				S: aws.String("1"),
-			},
-			"chapter": {
-				N: aws.String("1"),
+			"Title": {
+				S: aws.String("Test"),
 			},
 		},
 		TableName: aws.String("wcf"),
@@ -40,7 +37,7 @@ func main() {
 			case dynamodb.ErrCodeInternalServerError:
 				fmt.Println(dynamodb.ErrCodeInternalServerError, aerr.Error())
 			default:
-				fmt.Println(aerr.Error())
+				fmt.Println("hmmmm", aerr.Error())
 			}
 		} else {
 			// Print the error, cast err to awserr.Error to get the Code and
