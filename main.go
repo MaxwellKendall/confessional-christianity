@@ -9,19 +9,30 @@ import (
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 )
+
+// Chapter comment
+type Chapter struct {
+	ID      string `json:"id"`
+	Whateva string `json:"whateva"`
+}
 
 func main() {
 	// lets read something from dynamo db
 	sess := session.Must(session.NewSession())
 	svc := dynamodb.New(sess)
+	test := Chapter{
+		ID:      "1",
+		Whateva: "we",
+	}
+	key, err := dynamodbattribute.MarshalMap(test)
+	if err != nil {
+		fmt.Println("YIZO")
+	}
 	input := &dynamodb.GetItemInput{
-		Key: map[string]*dynamodb.AttributeValue{
-			"Title": {
-				S: aws.String("Test"),
-			},
-		},
-		TableName: aws.String("wcf"),
+		Key:       key,
+		TableName: aws.String("test2"),
 	}
 
 	result, err := svc.GetItem(input)
