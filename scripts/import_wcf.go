@@ -3,11 +3,9 @@
 // 2. Get DB Connection
 // 3. Post to DB
 
-package main
+package wcf
 
 import (
-	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"log"
 	"strings"
@@ -20,16 +18,17 @@ const (
 	wcfScriptureProofAnnotation     = "WCF_PROOF"
 )
 
-type wcfChapter struct {
+// Chapter represents a chapter of the Westminster Confession of Faith
+type Chapter struct {
 	Title      string            `json:"title"`
 	Number     int               `json:"number"`
 	Paragraphs []string          `json:"paragraphs"`
 	Proofs     map[string]string `json:"proofs"`
 }
 
-func parseWCF(data []byte) []wcfChapter {
+func parseWCF(data []byte) []Chapter {
 	wcfWords := strings.Fields(string(data))
-	confession := []wcfChapter{}
+	confession := []Chapter{}
 	chapterIndexStart := 0
 	chapterIndexEnd := 1
 	chapterNumber := 0
@@ -48,7 +47,7 @@ func parseWCF(data []byte) []wcfChapter {
 				}
 			}
 
-			newChapter := wcfChapter{
+			newChapter := Chapter{
 				Title:      getChapterTitle(wcfWords[chapterIndexStart:chapterIndexEnd]),
 				Number:     chapterNumber,
 				Paragraphs: getChapterParagraph(wcfWords[chapterIndexStart:chapterIndexEnd]),
@@ -149,24 +148,19 @@ func getChapterTitle(wcfWords []string) string {
 	return title
 }
 
-func main() {
-	content, err := ioutil.ReadFile("WCF.txt")
+// ImportWCF returns the WCF as an array of wcfChapters
+func ImportWCF() []Chapter {
+	content, err := ioutil.ReadFile("./scripts/WCF.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	wcf := parseWCF(content)
-	fmt.Println("*************************************** Title:", wcf[13].Title)
-	fmt.Println("*************************************** Content:", wcf[13].Paragraphs[0])
-	fmt.Println("*************************************** Proof A:", wcf[13].Proofs["a"])
-	fmt.Println("*************************************** Proof B:", wcf[13].Proofs["b"])
-	fmt.Println("*************************************** Proof C:", wcf[13].Proofs["c"])
-	fmt.Println("*************************************** Proof D:", wcf[13].Proofs["d"])
-	fmt.Println("*************************************** Number of Proofs:", len(wcf[13].Proofs))
 
-	test, err := json.Marshal(wcf[0].Proofs)
-	if err != nil {
-		fmt.Println(err)
-	}
-	fmt.Println(string(test))
+	// json, err := json.Marshal(wcf[0].Proofs)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// }
+
+	return wcf
 }

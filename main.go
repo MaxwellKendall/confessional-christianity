@@ -5,6 +5,9 @@ package main
 import (
 	"fmt"
 	"os"
+	"strconv"
+
+	"github.com/MaxwellKendall/confessional-christianity/scripts"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/awserr"
@@ -13,8 +16,17 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 )
 
-// WcfQuery comment
+// WcfPutQuery used to update WCF
 type WcfQuery struct {
+	ID         string            `json:"id"`
+	Chapter    int               `json:"chapter"`
+	Title      string            `json:"title"`
+	Paragraphs []string          `json:"paragraphs"`
+	Proofs     map[string]string `json:"proofs"`
+}
+
+// WcfGetQuery used to update WCF
+type WcfGetQuery struct {
 	ID      string `json:"id"`
 	Chapter int    `json:"chapter"`
 }
@@ -57,19 +69,7 @@ func update(svc *dynamodb.DynamoDB, query map[string]*dynamodb.AttributeValue) (
 	})
 }
 
-func main() {
-	svc := getDBSession()
-	listTables(svc)
-
-	// Read from DB
-	chapter1 := WcfQuery{
-		ID:      "1",
-		Chapter: int(1),
-	}
-
-	chapter1Query, err := dynamodbattribute.MarshalMap(chapter1)
-	result, err := get(svc, chapter1Query)
-
+func handleDBError(err error) {
 	if err != nil {
 		if aerr, ok := err.(awserr.Error); ok {
 			switch aerr.Code() {
@@ -91,6 +91,29 @@ func main() {
 		}
 		return
 	}
+}
 
-	fmt.Println("here it is bra", result.Item)
+func makeQuery(in interface{}) (map[string]*dynamodb.AttributeValue, error) {
+	return dynamodbattribute.MarshalMap(in)
+}
+
+func main() {
+	svc := getDBSession()
+	wcf := wcf.ImportWCF()
+
+	for _, chap := range wcf {
+		parsedChapter := WcfGetQuery{
+			ID:      "WCF_" + strconv.Itoa(chap.Number),
+			Chapter: chap.Number,
+		}
+		query, err := makeQuery(parsedChapter)
+		if err != nil {
+			fmt.Println("**ERROR: ", err)
+		}
+		result, err := get(svc, query)
+		handleDBError(err)
+		fmt.Println(result)
+	}
+
+	// fmt.Println("Result", output)
 }
