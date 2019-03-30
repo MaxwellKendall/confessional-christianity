@@ -150,7 +150,7 @@ func getChapterTitle(wcfWords []string) string {
 
 // ImportWCF returns the WCF as an array of wcfChapters
 func ImportWCF() []Chapter {
-	content, err := ioutil.ReadFile("./scripts/WCF.txt")
+	content, err := ioutil.ReadFile("./data/WCF.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
