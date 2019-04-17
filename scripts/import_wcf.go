@@ -3,7 +3,7 @@
 // 2. Get DB Connection
 // 3. Post to DB
 
-package wcf
+package scripts
 
 import (
 	"io/ioutil"
@@ -156,11 +156,6 @@ func ImportWCF() []Chapter {
 	}
 
 	wcf := parseWCF(content)
-
-	// json, err := json.Marshal(wcf[0].Proofs)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// }
 
 	return wcf
 }

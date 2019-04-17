@@ -1,11 +1,14 @@
-package dynamo
+package ccdb
 
 import (
-	"github.com/aws/aws-sdk-go/aws"
-	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"errors"
+	"strconv"
+
+	"github.com/MaxwellKendall/confessional-christianity/impl/api"
+	"github.com/MaxwellKendall/confessional-christianity/utils"
 )
 
-// WcfPutQuery used to update WCF
+// WcfQuery used to update WCF
 type WcfQuery struct {
 	ID         string            `json:"id"`
 	Chapter    int               `json:"chapter"`
@@ -20,18 +23,20 @@ type WcfGetQuery struct {
 	Chapter int    `json:"chapter"`
 }
 
-// Get performs a select on the DB
-func Get(svc *dynamodb.DynamoDB, query map[string]*dynamodb.AttributeValue) (*dynamodb.GetItemOutput, error) {
-	return svc.GetItem(&dynamodb.GetItemInput{
-		TableName: aws.String("wcf"),
-		Key:       query,
+// GetWcfChapter returns a wcf.Chapter from the db
+func GetWcfChapter(chapter int) (interface{}, error) {
+	query, err := utils.MakeQuery(WcfGetQuery{
+		ID:      "WCF_" + strconv.Itoa(chapter),
+		Chapter: chapter,
 	})
-}
-
-// Update performs an update on the DB
-func Update(svc *dynamodb.DynamoDB, query map[string]*dynamodb.AttributeValue) (*dynamodb.PutItemOutput, error) {
-	return svc.PutItem(&dynamodb.PutItemInput{
-		TableName: aws.String("wcf"),
-		Item:      query,
-	})
+	if err != nil {
+		return api.Chapter{}, errors.New("some error happened when making a query")
+	}
+	svc := utils.GetDBSession()
+	result, err := utils.Get("wcf", svc, query)
+	if err != nil {
+		return api.Chapter{}, utils.HandleDBError(err)
+	}
+	// TODO: Figure out how to convert this to a struct
+	return result.Item["paragraphs"], nil
 }
