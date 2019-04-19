@@ -4,6 +4,9 @@ import (
 	"errors"
 	"strconv"
 
+	"github.com/aws/aws-sdk-go/service/dynamodb"
+	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
+
 	"github.com/MaxwellKendall/confessional-christianity/impl/api"
 	"github.com/MaxwellKendall/confessional-christianity/utils"
 )
@@ -23,8 +26,16 @@ type WcfGetQuery struct {
 	Chapter int    `json:"chapter"`
 }
 
+func unmarshalChapter(dbpayload map[string]*dynamodb.AttributeValue, output *api.Chapter) error {
+	err := dynamodbattribute.UnmarshalMap(dbpayload, output)
+	if err != nil {
+		return err
+	}
+	return nil
+}
+
 // GetWcfChapter returns a wcf.Chapter from the db
-func GetWcfChapter(chapter int) (interface{}, error) {
+func GetWcfChapter(chapter int) (api.Chapter, error) {
 	query, err := utils.MakeQuery(WcfGetQuery{
 		ID:      "WCF_" + strconv.Itoa(chapter),
 		Chapter: chapter,
@@ -38,5 +49,7 @@ func GetWcfChapter(chapter int) (interface{}, error) {
 		return api.Chapter{}, utils.HandleDBError(err)
 	}
 	// TODO: Figure out how to convert this to a struct
-	return result.Item["paragraphs"], nil
+	rtrn := api.Chapter{}
+	unmarshalChapter(result.Item, &rtrn)
+	return rtrn, nil
 }
