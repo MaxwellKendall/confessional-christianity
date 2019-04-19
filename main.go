@@ -1,5 +1,3 @@
-// having an issue with .aws/config at work, fixed issue at work, now experiencing 400
-
 package main
 
 import (
