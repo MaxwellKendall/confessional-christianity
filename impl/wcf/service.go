@@ -4,14 +4,21 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/MaxwellKendall/confessional-christianity/impl/wcf/dao"
+	"github.com/MaxwellKendall/confessional-christianity/impl/api"
+
+	ccdb "github.com/MaxwellKendall/confessional-christianity/impl/wcf/dao"
 )
 
-func PrintWCF() {
-	wcfChapter, _ := ccdb.GetWcfChapter(1)
+// The Service is used in the mux
+type Service struct{}
+
+// GetChapter returns a chapter of the WCF
+func (Service) GetChapter(chapter int) (api.WCFChapter, error) {
+	wcfChapter, _ := ccdb.GetWcfChapter(chapter)
 	json, err := json.Marshal(wcfChapter)
 	if err != nil {
-		fmt.Println(err.Error())
+		return api.WCFChapter{}, err
 	}
 	fmt.Println(string(json))
+	return wcfChapter, nil
 }

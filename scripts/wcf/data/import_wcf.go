@@ -20,6 +20,7 @@ const (
 
 // Chapter represents a chapter of the Westminster Confession of Faith
 type Chapter struct {
+	// This probably should've been imported from api/wcf.go, but this pre-dates it  ¯\_(ツ)_/¯
 	Title      string            `json:"title"`
 	Number     int               `json:"number"`
 	Paragraphs []string          `json:"paragraphs"`
