@@ -1,11 +1,9 @@
 package wcf
 
 import (
-	"encoding/json"
 	"fmt"
 
-	"github.com/MaxwellKendall/confessional-christianity/impl/api"
-
+	"github.com/MaxwellKendall/confessional-christianity/api"
 	ccdb "github.com/MaxwellKendall/confessional-christianity/impl/wcf/dao"
 )
 
@@ -14,11 +12,10 @@ type Service struct{}
 
 // GetChapter returns a chapter of the WCF
 func (Service) GetChapter(chapter int) (api.WCFChapter, error) {
-	wcfChapter, _ := ccdb.GetWcfChapter(chapter)
-	json, err := json.Marshal(wcfChapter)
+	wcfChapter, err := ccdb.GetWcfChapter(chapter)
 	if err != nil {
+		fmt.Println("Error in service layer, get Chapter", err)
 		return api.WCFChapter{}, err
 	}
-	fmt.Println(string(json))
 	return wcfChapter, nil
 }

@@ -3,25 +3,31 @@ package rest
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"net/http"
+	"strconv"
 
-	"github.com/MaxwellKendall/confessional-christianity/impl/api"
-	"github.com/go-kit/kit/endpoint"
+	"github.com/gorilla/mux"
 )
 
-// the transfer from a go-struct to a json object
-func EncodeResponse(_ context.Context, w http.ResponseWriter, response interface{}) error {
+// encodeResponse the transfer from a go-struct to a json object
+func encodeResponse(_ context.Context, w http.ResponseWriter, response interface{}) error {
 	return json.NewEncoder(w).Encode(response)
 }
 
-// the transfer of json to a go-struct
-func DecodeGetWCFChapterRequest(_ context.Context, r *http.Request) (interface{}, error) {
-	var request getWCFChapterRequest
-	if err := json.NewDecoder(r.Body).Decode(&request); err != nil {
-		return nil, err
+// decodeGetWCFChapterRequest the transfer of json to a go-struct
+func decodeGetWCFChapterRequest(_ context.Context, r *http.Request) (interface{}, error) {
+	vars := mux.Vars(r)
+	// var request endpoints.getWCFChapterRequest
+	chapterRequested, _ := strconv.Atoi(vars["number"])
+
+	fmt.Println("ChapterRequested: ", chapterRequested)
+
+	ok := chapterRequested <= 33 && chapterRequested > 0
+	if !ok {
+		return nil, errors.New("Chapter requested does not exist")
 	}
-	return request, nil
+
+	return chapterRequested, nil
 }
-
-

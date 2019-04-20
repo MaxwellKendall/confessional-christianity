@@ -2,20 +2,22 @@ package endpoints
 
 import (
 	"context"
+	"errors"
+	"fmt"
 
-	"github.com/MaxwellKendall/confessional-christianity/impl/api"
+	"github.com/MaxwellKendall/confessional-christianity/api"
 	"github.com/go-kit/kit/endpoint"
 )
 
-// Endpoints defines the name of each endpoint, and its type
+// Endpoints contains every end point
 type Endpoints struct {
-	// every end point, defined as type endpoint.Endpoint
 	GetWCFChapterEndpoint endpoint.Endpoint
 }
 
-// New returns all callable actions available via REST
-func New(config Configuration) Endpoints {
+// GetEndpointConfig returns all endpoints w/ gokit Endpoint
+func GetEndpointConfig(config Configuration) Endpoints {
 	return Endpoints{
+		// 1. WCF end points:
 		GetWCFChapterEndpoint: makeGetWCFChapterEndpoint(config.Wcf),
 	}
 }
@@ -23,10 +25,14 @@ func New(config Configuration) Endpoints {
 // makeGetWCFChapterEndpoint returns the endpoint
 func makeGetWCFChapterEndpoint(svc api.WCFService) endpoint.Endpoint {
 	return func(_ context.Context, request interface{}) (interface{}, error) {
-		req := request.(getWCFChapterRequest)
-		res, err := svc.GetChapter(req.Chapter)
+		req, ok := request.(int)
+		if !ok {
+			return nil, errors.New("HERES AN ERROR")
+		}
+		res, err := svc.GetChapter(req)
 		if err != nil {
 			// provide generic response type: errInvalidRequest
+			fmt.Println("error: ", string(err.Error()))
 			return nil, err
 		}
 		return res, nil

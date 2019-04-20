@@ -1,23 +1,20 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/MaxwellKendall/confessional-christianity/impl/wcf"
+	"github.com/MaxwellKendall/confessional-christianity/api"
+	"github.com/MaxwellKendall/confessional-christianity/server/endpoints"
 	"github.com/MaxwellKendall/confessional-christianity/server/rest"
-
-	gktransport "github.com/go-kit/kit/transport/http"
 )
 
 func main() {
-	var svc wcf.Service
+	var svc api.WCFService
 
-	getWCFChapterHandler := gktransport.NewServer(
-		rest.MakeGetWCFChapterEndpoint(svc),
-		rest.DecodeGetWCFChapterRequest,
-		rest.EncodeResponse,
-	)
+	config := endpoints.Configuration{
+		Wcf: svc,
+	}
 
-	http.Handle("/chapter", getWCFChapterHandler)
-	http.ListenAndServe(":1517", nil)
+	endPoints := endpoints.GetEndpointConfig(config)
+
+	rest.NewServer(endPoints)
+
 }
