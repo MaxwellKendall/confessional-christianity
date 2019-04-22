@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"github.com/aws/aws-sdk-go/service/dynamodb/dynamodbattribute"
 
-	"github.com/MaxwellKendall/confessional-christianity/impl/api"
+	"github.com/MaxwellKendall/confessional-christianity/api"
 	"github.com/MaxwellKendall/confessional-christianity/utils"
 )
 
@@ -43,8 +43,8 @@ func GetWcfChapter(chapter int) (api.WCFChapter, error) {
 	if err != nil {
 		return api.WCFChapter{}, errors.New("some error happened when making a query")
 	}
-	svc := utils.GetDBSession()
-	result, err := utils.Get("wcf", svc, query)
+	sess := utils.GetDBSession()
+	result, err := utils.Get("wcf", sess, query)
 	if err != nil {
 		return api.WCFChapter{}, utils.HandleDBError(err)
 	}

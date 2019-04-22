@@ -12,7 +12,7 @@ type Service struct{}
 
 // GetChapter returns a chapter of the WCF
 func (Service) GetChapter(chapter int) (api.WCFChapter, error) {
-	wcfChapter, err := ccdb.GetWcfChapter(chapter)
+	wcfChapter, err := ccdb.GetWcfChapter(1)
 	if err != nil {
 		fmt.Println("Error in service layer, get Chapter", err)
 		return api.WCFChapter{}, err

@@ -4,7 +4,6 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"fmt"
 	"net/http"
 	"strconv"
 
@@ -19,10 +18,7 @@ func encodeResponse(_ context.Context, w http.ResponseWriter, response interface
 // decodeGetWCFChapterRequest the transfer of json to a go-struct
 func decodeGetWCFChapterRequest(_ context.Context, r *http.Request) (interface{}, error) {
 	vars := mux.Vars(r)
-	// var request endpoints.getWCFChapterRequest
 	chapterRequested, _ := strconv.Atoi(vars["number"])
-
-	fmt.Println("ChapterRequested: ", chapterRequested)
 
 	ok := chapterRequested <= 33 && chapterRequested > 0
 	if !ok {

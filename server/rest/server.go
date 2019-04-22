@@ -21,17 +21,14 @@ const (
 func NewServer(endpoints endpoints.Endpoints) *http.Server {
 	r := makeHandlers(endpoints) // create custom router using gorilla
 	server := &http.Server{
-		Addr:           "127.0.0.1:1517", // port address
+		Addr:           "127.0.0.1:8080", // port address
 		Handler:        r,
 		ReadTimeout:    10 * time.Second,
 		WriteTimeout:   10 * time.Second,
 		MaxHeaderBytes: 1 << 20,
 	}
 
-	// go func() {
-	// server.ListenAndServe()
 	log.Fatal(server.ListenAndServe())
-	// }()
 
 	return server
 }

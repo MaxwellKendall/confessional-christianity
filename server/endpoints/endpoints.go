@@ -29,10 +29,11 @@ func makeGetWCFChapterEndpoint(svc api.WCFService) endpoint.Endpoint {
 		if !ok {
 			return nil, errors.New("HERES AN ERROR")
 		}
+
 		res, err := svc.GetChapter(req)
 		if err != nil {
 			// provide generic response type: errInvalidRequest
-			fmt.Println("error: ", string(err.Error()))
+			fmt.Println("*** error: ", string(err.Error()))
 			return nil, err
 		}
 		return res, nil

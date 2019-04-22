@@ -1,16 +1,16 @@
 package main
 
 import (
-	"github.com/MaxwellKendall/confessional-christianity/api"
+	"github.com/MaxwellKendall/confessional-christianity/impl/wcf"
 	"github.com/MaxwellKendall/confessional-christianity/server/endpoints"
 	"github.com/MaxwellKendall/confessional-christianity/server/rest"
 )
 
 func main() {
-	var svc api.WCFService
+	wcfSvc := wcf.NewServiceWithMiddleWare()
 
 	config := endpoints.Configuration{
-		Wcf: svc,
+		Wcf: wcfSvc,
 	}
 
 	endPoints := endpoints.GetEndpointConfig(config)
