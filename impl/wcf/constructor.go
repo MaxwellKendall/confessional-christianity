@@ -4,10 +4,14 @@ import (
 	"github.com/MaxwellKendall/confessional-christianity/api"
 )
 
-// NewServiceWithMidddleWare eventually will take a config paramater
+// NewServiceWithMiddleware will eventually take a config paramater
 // so that all services can have shared properties and methods
-func NewServiceWithMiddleWare() api.WCFService {
+func NewServiceWithMiddleware() api.WCFService {
 	var service api.WCFService
-	// service = {} add new properties etc
+	// TODO add new properties etc via service = {}
+
+	// adding receiver fns to satisfy the WCFService interface
+	service = newService()
+
 	return service
 }

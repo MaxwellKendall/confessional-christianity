@@ -8,10 +8,16 @@ import (
 )
 
 // The Service is used in the mux
-type Service struct{}
+type service struct{}
+
+// Exporting the service w/ this in the constructor.go
+func newService() service {
+	// add nifty stuff here like return service{ niftyStuff: someCoolToolToBeUsedWithinService }
+	return service{}
+}
 
 // GetChapter returns a chapter of the WCF
-func (Service) GetChapter(chapter int) (api.WCFChapter, error) {
+func (service) GetChapter(chapter int) (api.WCFChapter, error) {
 	wcfChapter, err := ccdb.GetWcfChapter(1)
 	if err != nil {
 		fmt.Println("Error in service layer, get Chapter", err)

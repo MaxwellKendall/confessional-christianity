@@ -17,7 +17,7 @@ const (
 	WcfURL  = "/wcf"
 )
 
-// NewServer creates a servier for all this mess
+// NewServer creates a server for all this mess
 func NewServer(endpoints endpoints.Endpoints) *http.Server {
 	r := makeHandlers(endpoints) // create custom router using gorilla
 	server := &http.Server{

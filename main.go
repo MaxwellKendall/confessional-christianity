@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	wcfSvc := wcf.NewServiceWithMiddleWare()
+	wcfSvc := wcf.NewServiceWithMiddleware()
 
 	config := endpoints.Configuration{
 		Wcf: wcfSvc,
