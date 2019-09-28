@@ -1,5 +1,5 @@
 # Confessional-Christianity
-The historic creeds and confessions of the Christian faith are of great interest to me as a Christian man. This project is mostly intended
+The historic creeds and confessions of the Christian faith are of great interest to me as a Christian. This project is mostly intended
 to build and demonstrate my skills as a Software Engineer, but also to provide interesting and helpful data concerning these historic
 and time-tested documents.
 
