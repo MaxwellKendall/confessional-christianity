@@ -5,25 +5,22 @@ and time-tested documents.
 
 ## Aren't there already websites out there like this?
 Yes and no. To my knowledge, there is not a public API returning JSON in a modern web-development format. The websites I've looked at (in the
-network tab in the Chrome Dev Console!) appear to be making call which return with HTML which have the data embedded. They could be server-side
-rendering a modern-web application, but it appears to me they are all serving their data in such a way that it is married to a certain HTML
-structure.
+network tab in the Chrome Dev Console!) appear to be making calls which return HTML pages with the data embedded. They could be server-side-rendering a modern-web application, but it appears to me they are all serving their data in such a way that it is coupled to a certain HTML structure.
 
-What I intend to do, is return strictly JSON via HTTP, GRPC, and graphQL. The benefit of doing this, of course, is that the client can determine
-what to do with the data, so it is not coupled to HTML etc...
+What I intend to do, is return strictly JSON via HTTP, GRPC, and graphQL. The benefit of doing this, of course, is that the client can determine what to do with the data, so it is not coupled to HTML etc...
 
 ## The Intent of this REPO
-This repo is intended to be the grand-parent of all other forthcoming repos. In it, I will implement a basic HTTP server responding to
-RESTful requests in JSON. I chose golang because at the time I began this project, I was working with Go and found it an intersting language.
+First, I will implement a basic HTTP server responding to RESTful requests in JSON for the Westminster Confession of Faith.
+Second, I will implement a basic gRPC server responding to RPC requests.
 
 ### Tech Used
 - GoKit
 - DynamoDB
 
 ## Forthcoming REPOs
-- Node GraphQL: a GraphQL API will be created for the front end to consume.
-- SSR React: I intend to use NextJS, Apollo, and React to render a modern, performant, stand-alone front end.
-- Data Visualization in Python: I intend to use the gRPC server in a python project to extract, load, and transform the data into a new back end.
+- Node GraphQL API: a GraphQL API will be created for the front end to consume.
+- Data Visualization in Python: I intend to interact with the gRPC server in a python project to extract, load, and transform the data into a new back end.
+- SSR React: I intend to use NextJS, Apollo, and React to render a modern, performant, as a stand-alone front end.
 
 ## Hosting & Deployment
 - To implement a smooth deployment process, I will be using CircleCI and the boto3 AWS python package for automatic deployment.
