@@ -54,7 +54,6 @@ func parseWCF(data []byte) []Chapter {
 				Paragraphs: getChapterParagraph(wcfWords[chapterIndexStart:chapterIndexEnd]),
 				Proofs:     getScriptureProofs(wcfWords[chapterIndexStart:chapterIndexEnd]),
 			}
-
 			confession = append(confession, newChapter)
 		}
 	}
@@ -151,7 +150,7 @@ func getChapterTitle(wcfWords []string) string {
 
 // ImportWCF returns the WCF as an array of wcfChapters
 func ImportWCF() []Chapter {
-	content, err := ioutil.ReadFile("./data/WCF.txt")
+	content, err := ioutil.ReadFile("scripts/wcf/data/WCF.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
