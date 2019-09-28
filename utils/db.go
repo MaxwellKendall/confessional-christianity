@@ -44,7 +44,7 @@ func HandleDBError(err error) error {
 			case dynamodb.ErrCodeInternalServerError:
 				return errors.New(string(dynamodb.ErrCodeInternalServerError) + string(aerr.Error()))
 			default:
-				return errors.New("hmmmm" + string(aerr.Error()))
+				return errors.New("hmmmm... " + string(aerr.Error()))
 			}
 		} else {
 			// Print the error, cast err to awserr.Error to get the Code and

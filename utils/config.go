@@ -9,7 +9,7 @@ import (
 func GetDBSession() *dynamodb.DynamoDB {
 	// lets read something from dynamo db
 	sess := session.Must(session.NewSessionWithOptions(session.Options{
-		Profile: "ccdev",
+		Profile: "default",
 	}))
 
 	return dynamodb.New(sess)
