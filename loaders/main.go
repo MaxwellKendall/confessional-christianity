@@ -28,7 +28,7 @@ func main() {
 	wcfCitations := citations.ImportWcfCitations()
 
 	// fmt.Println(wcfCitations)
-	fmt.Println("HELLOOO", wcfCitations)
+	fmt.Println("HELLOOO", wcfCitations[:10])
 	// for _, chap := range wcf {
 	// 	parsedChapter := WcfGetQuery{
 	// 		ID:      "WCF_" + strconv.Itoa(chap.Number),
