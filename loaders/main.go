@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	// "strconv"
 
 	citations "github.com/MaxwellKendall/confessional-christianity/loaders/citations"
 	// db "github.com/MaxwellKendall/confessional-christianity/utils"
@@ -26,20 +25,10 @@ type WcfGetQuery struct {
 func main() {
 	// svc := db.GetDBSession()
 	wcfCitations := citations.ImportWcfCitations()
-
-	// fmt.Println(wcfCitations)
-	fmt.Println("HELLOOO", wcfCitations[:10])
-	// for _, chap := range wcf {
-	// 	parsedChapter := WcfGetQuery{
-	// 		ID:      "WCF_" + strconv.Itoa(chap.Number),
-	// 		Chapter: chap.Number,
-	// 	}
-	// 	query, err := db.MakeQuery(parsedChapter)
-	// 	if err != nil {
-	// 		fmt.Println("**ERROR: ", err)
-	// 	}
-	// 	result, err := db.Get(svc, query)
-	// 	db.HandleDBError(err)
-	// 	fmt.Println(result)
-	// }
+	for _, citation := range wcfCitations {
+		fmt.Println(citation.Scripture)
+		// TODO: Build struct that will be used to update db
+		// db.MakeQuery()
+		// db.Update("citations", svc)
+	}
 }
